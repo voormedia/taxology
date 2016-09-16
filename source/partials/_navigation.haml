@@ -1,16 +1,24 @@
-- navigation_class = current_page == "home" ? "scroll-to" : ""
-
 %nav#main{role: "navigation"}
 
   .logo.mobile-hidden
     %a{ href: "/" }
       %img{ src: "/images/protocol-logo-white.png", alt: "Protocol: Automated WHT recovery" }
   %ul
-    %li{nav_active("#about-protocol")}
-      = link_to "About protocol", "#about-protocol", class: navigation_class
-    %li{nav_active("#features")}
-      = link_to "Features", "#features", class: navigation_class
-    %li{nav_active("#request-demo")}
-      = link_to "Request demo", "#request-demo", class: navigation_class
-    %li{nav_active("#contact")}
-      = link_to "Contact", "#contact", class: navigation_class
+    - if current_page == "home"
+      %li
+        = link_to "About protocol", "#about-protocol", class: "scroll-to"
+      %li
+        = link_to "Features", "#features", class: "scroll-to"
+      %li
+        = link_to "Request demo", "#request-demo", class: "scroll-to"
+      %li
+        = link_to "Contact", "#contact", class: "scroll-to"
+    - else
+      %li
+        = link_to "About protocol", "/#about-protocol"
+      %li
+        = link_to "Features", "/#features"
+      %li
+        = link_to "Request demo", "/#request-demo"
+      %li
+        = link_to "Contact", "/#contact"
