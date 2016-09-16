@@ -1,0 +1,38 @@
+%footer#contact{role: "contentinfo"}
+  .container
+
+    %a.back-to-top.scroll-to{ href: "#top" }
+      back to top
+
+    .contact-details
+      %h2 Contact
+
+      %p
+        %h4
+          Taxology BV
+        %a( href="mailto:info@taxology.nl" )
+          info@taxology.nl
+        %br
+        %br
+        Koningin Emmaplein 13 
+        %br
+        3016 AB Rotterdam 
+        %br
+        The Netherlands
+
+    .terms-of-use
+      %h2 Terms of use
+
+      %p
+        %a( href="/privacy-policy" )
+          Privacy policy
+        %br
+        %a( href="/terms-and-conditions" )
+          Terms and conditions
+
+
+
+
+    .copyright
+      &copy; #{Time.now.year} #{data.config.site.author}
+      %img{ src: "/images/protocol-logo-white.png", alt: "Protocol: Automated WHT recovery" }

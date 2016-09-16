@@ -1,0 +1,22 @@
+html .mfp-inline-holder .mfp-content {
+  width: auto;
+}
+
+.popup {
+  padding: 5rem 6rem;
+  min-width: 50rem;
+  max-width: 96rem;
+  background: white;
+
+  h1, h2, h3, h4 {
+    text-align: left;
+  }
+
+  .number {
+    margin-bottom: 2rem;
+  }
+
+  &.inline-popup {
+    max-width: 70rem;
+  }
+}

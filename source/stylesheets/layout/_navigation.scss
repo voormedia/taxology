@@ -1,0 +1,68 @@
+body > header nav {
+  font-weight: 600;
+}
+
+@include smartphone {
+  body > header nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    padding: 8rem 4rem 4rem;
+    width: 100%;
+    background: #222;
+    font-size: 2.5rem;
+    @include translateX(100%);
+    @include transition-property(transform);
+    @include transition-duration(0.3s);
+    &:before {
+      content: '';
+      position: fixed;
+      top: 4rem;
+      display: block;
+      width: 2rem;
+      height: 2rem;
+      background: url("/images/hamburger-icon.svg") no-repeat top right;
+      @include translateX(-450%);
+      @include transition-property(transform);
+      @include transition-duration(0.3s);
+    }
+    &.active {
+      @include translateX(0);
+      &:before {
+        @include translateX(0);
+      }
+    }
+
+
+    .logo {
+      float: none;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        margin: 2.5rem 0;
+      }
+    }
+  }
+}
+
+@include desktop {
+  body > header nav {
+    ul {
+      float: right;
+      list-style: none;
+
+      li {
+        display: inline-block;
+        margin-left: 3rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: lowercase;
+      }
+    }
+  }
+}

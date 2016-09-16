@@ -1,0 +1,61 @@
+.feature {
+  margin: 2rem 0 0;
+  @include clearfix;
+  @include desktop {
+    margin: 5rem 0;
+  }
+  .feature-content {
+    position: relative;
+    margin: 1.5rem 0 0 9rem;
+    @include smartphone {
+      margin: 1.5rem 0 0 7rem;
+    }
+
+    .number {
+      position: absolute;
+      left: -9rem;
+      top: -1.5rem;
+      @include smartphone {
+        width: 5rem;
+        left: -7rem;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .background-info {
+      color: $secondary-font-color;
+    }
+
+    ul {
+      li {
+        margin-bottom: 1.6rem;
+      }
+    }
+
+    a.info {
+      padding-left: 3rem;
+      background: url("/images/icon-info.svg") no-repeat center left;
+    }
+  }
+
+  .feature-image {
+    img {
+      width: 100%;
+    }
+  }
+
+  .right-column {
+    margin-top: 1.5rem;
+  }
+}
+
+.feature.feature-1 {
+  .feature-image
+   img {
+    width: calc(100% - 5rem);
+    margin-left: 5rem;
+  }
+}
