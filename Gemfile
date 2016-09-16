@@ -15,3 +15,5 @@ gem 'middleman-smusher'
 gem 'middleman-imageoptim'
 
 gem 'rubocop', require: false
+
+gem "voormedia-deployer", git: "git@git.voormedia.com:voormedia/deployer"
