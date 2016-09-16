@@ -3,16 +3,21 @@ site:
   root_url: http://www.taxology.nl
   title: Protocol
   title_separator: " &mdash; "
-  meta_description: Example description
+  meta_description: Protolcol standardizes and automates the world wide withholding (WHT) tax recovery process for pension funds
   meta_keywords:
-    - example
-    - keyword
+    - "WHT"
+    - "withholding tax"
+    - "tax recovery"
+    - "taxology"
+    - "Protocol"
+    - "tax automation"
+    - "wht recovery"
   author: Taxology
   active_navigation_item_class: current
-  analytics_id: UA-XXXXXXX-XX
+  analytics_id: UA-84290926-1
 
 # Author of CSS & JavaScript
 source:
   author:
-    name: Author Name
-    uri: http://www.example.com
+    name: Voormedia
+    uri: http://www.voormedia.com
