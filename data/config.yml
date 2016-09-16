@@ -3,7 +3,7 @@ site:
   root_url: http://www.taxology.nl
   title: Protocol
   title_separator: " &mdash; "
-  meta_description: Protolcol standardizes and automates the world wide withholding (WHT) tax recovery process for pension funds
+  meta_description: Protocol standardizes and automates the world wide withholding (WHT) tax recovery process for pension funds
   meta_keywords:
     - "WHT"
     - "withholding tax"
