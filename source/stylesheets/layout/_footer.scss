@@ -19,13 +19,11 @@ body > footer {
 
     h4 {
       color: white;
+      margin-bottom: 0;
     }
 
-    .terms-of-use {
-      a {
-        color: white;
-        font-weight: 600;
-      }
+    a {
+      color: lighten($link-color, 20);
     }
 
     a.back-to-top {
@@ -44,7 +42,11 @@ body > footer {
 
     .copyright {
       margin-top: 5rem;
-      font-weight: 600;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      text-align: right;
+      letter-spacing: 0.1rem;
+      color: $footer-font-color;
       @include desktop {
         position: absolute;
         right: 4rem;
@@ -53,10 +55,10 @@ body > footer {
 
       img {
         display: block;
+        margin-bottom: -0.5rem;
         width: 20rem;
 
         @include desktop {
-          display: inline-block;
           margin-left: 3rem;
           width: 14rem;
         }

@@ -4,8 +4,13 @@ article > section {
     background-color: #F3F6F9;
     background-image: radial-gradient(50% -20%,100% 100%, #FFFFFF 0%, #EDF1F6 100%);
 
-    h2 {
-      text-align: left;
+    p {
+      margin: 0 auto 2rem;
+    }
+
+    h4 {
+      margin: 1rem auto 1rem;
+      max-width: 56rem;
     }
 
     img {

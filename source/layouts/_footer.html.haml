@@ -7,29 +7,32 @@
     .contact-details
       %h2 Contact
 
+      %h4
+        Taxology BV
+      %a( href="mailto:info@taxology.nl" )
+        info@taxology.nl
+
       %p
-        %h4
-          Taxology BV
-        %a( href="mailto:info@taxology.nl" )
-          info@taxology.nl
+        Straatweg 199
         %br
-        %br
-        Koningin Emmaplein 13 
-        %br
-        3016 AB Rotterdam 
+        3054 AE Rotterdam
         %br
         The Netherlands
 
     .terms-of-use
-      %h2 Terms of use
+      %h2 Legal
 
       %p
         %a( href="/privacy-policy/" )
           Privacy policy
-        -# %br
-        -# %a( href="/terms-and-conditions/" )
-        -#   Terms and conditions
+        %br
+        %a( href="/terms-and-conditions/" )
+          Terms and conditions
+        %br
+        %a( href="/security/" )
+          Security
 
     .copyright
+      %img{ src: "/images/protocol-logo-white-copyright.png", alt: "Protocol: Automated WHT recovery" }
       &copy; #{Time.now.year} #{data.config.site.author}
-      %img{ src: "/images/protocol-logo-white.png", alt: "Protocol: Automated WHT recovery" }
+
