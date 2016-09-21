@@ -23,7 +23,8 @@ body > footer {
     }
 
     a {
-      color: lighten($link-color, 20);
+      color: white;
+      font-weight: bold;
     }
 
     a.back-to-top {
