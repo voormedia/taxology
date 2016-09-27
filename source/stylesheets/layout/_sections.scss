@@ -31,6 +31,11 @@ article > section {
     }
 
   }
+  &#features {
+    header p {
+      max-width: 57rem;
+    }
+  }
   &#request-demo {
     border-top: 0.2rem solid $protocol-green;
     color: white;

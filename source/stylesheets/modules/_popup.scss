@@ -4,9 +4,11 @@ html .mfp-inline-holder .mfp-content {
 
 .popup {
   padding: 5rem 6rem;
-  min-width: 50rem;
   max-width: 96rem;
   background: white;
+  @include desktop {
+    min-width: 50rem;
+  }
 
   h1, h2, h3, h4 {
     text-align: left;
