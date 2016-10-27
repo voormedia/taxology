@@ -15,7 +15,7 @@ preview:
 acceptance:
   <<: *default
   domain: greip
-  # branch: master
+  branch: master
   deploy_to: /srv/html/taxology.nl-acceptance
   deploy_config_to: /srv/html/.cfgsrc/taxology.nl-acceptance
   rake_env: { WEB_ENV: acceptance }
@@ -23,7 +23,7 @@ acceptance:
 production:
   <<: *default
   domain: helike
-  branch: production
+  # branch: production
   deploy_to: /srv/html/taxology.nl-production
   deploy_config_to: /srv/html/.cfgsrc/taxology.nl-production
   rake_env: { WEB_ENV: production }
