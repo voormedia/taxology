@@ -5,6 +5,18 @@ body > footer {
 
   .container {
     position: relative;
+
+    .contact-details {
+      img {
+        position: relative;
+        top: 5px;
+        margin-right: 4px;
+      }
+      p > span {
+        font-size: 1.8rem;
+      }
+    }
+
     @include desktop {
       .contact-details {
         float: left;
