@@ -1,5 +1,7 @@
 ul.check-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
@@ -9,6 +11,9 @@ ul.check-list {
     margin: 2rem 3% 2rem 0;
     width: 30%;
     padding-left: 4rem;
+    @include smartphone {
+      width: 100%;
+    }
     &:before {
       position: absolute;
       left: 0;
