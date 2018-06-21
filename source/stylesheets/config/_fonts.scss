@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "taxology";
+  src:url("../fonts/taxology.eot");
+  src:url("../fonts/taxology.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/taxology.woff") format("woff"),
+    url("../fonts/taxology.ttf") format("truetype"),
+    url("../fonts/taxology.svg#taxology") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "taxology" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "taxology" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-plus-circle:before {
+  content: "\61";
+}
+.icon-exclamation-circle:before {
+  content: "\62";
+}
+.icon-exclamation-triangle:before {
+  content: "\63";
+}
+.icon-question-circle:before {
+  content: "\64";
+}
+.icon-info-circle:before {
+  content: "\65";
+}
+.icon-cog:before {
+  content: "\67";
+}
+.icon-user:before {
+  content: "\68";
+}
+.icon-table:before {
+  content: "\69";
+}
+.icon-file-text:before {
+  content: "\6a";
+}
+.icon-clock:before {
+  content: "\6c";
+}
+.icon-upload-cloud:before {
+  content: "\6d";
+}
+.icon-upload:before {
+  content: "\6e";
+}
+.icon-filetype-png:before {
+  content: "\72";
+}
+.icon-filetype-zip:before {
+  content: "\73";
+}
+.icon-filetype-pdf:before {
+  content: "\75";
+}
+.icon-filetype-xlsx:before {
+  content: "\76";
+}
+.icon-filetype-jpg:before {
+  content: "\7a";
+}
+.icon-filetype-doc:before {
+  content: "\41";
+}
+.icon-filetype-docx:before {
+  content: "\42";
+}
+.icon-filetype-csv:before {
+  content: "\44";
+}
+.icon-filetype-xls:before {
+  content: "\45";
+}
+.icon-filetype-txt:before {
+  content: "\48";
+}
+.icon-download:before {
+  content: "\4c";
+}
+.icon-paper-plane:before {
+  content: "\4d";
+}
+.icon-delete-circle:before {
+  content: "\4e";
+}
+.icon-remove:before {
+  content: "\4f";
+}
+.icon-minus-circle:before {
+  content: "\50";
+}
+.icon-sign-in:before {
+  content: "\51";
+}
+.icon-magic:before {
+  content: "\52";
+}
+.icon-check-circle:before {
+  content: "\6b";
+}
+.icon-check:before {
+  content: "\53";
+}
+.icon-pie-chart:before {
+  content: "\54";
+}
+.icon-globe:before {
+  content: "\55";
+}
+.icon-calendar-o:before {
+  content: "\57";
+}
+.icon-calendar:before {
+  content: "\58";
+}
+.icon-hourglass-end:before {
+  content: "\59";
+}
+.icon-list-alt:before {
+  content: "\5a";
+}
+.icon-paper-plane-o:before {
+  content: "\30";
+}
+.icon-pencil:before {
+  content: "\66";
+}
+.icon-trash:before {
+  content: "\31";
+}
+.icon-times-circle:before {
+  content: "\32";
+}
+.icon-gauge:before {
+  content: "\56";
+}
+.icon-building:before {
+  content: "\33";
+}
+.icon-book:before {
+  content: "\34";
+}
+.icon-bar-chart:before {
+  content: "\35";
+}
+.icon-search:before {
+  content: "\36";
+}
+.icon-pulse:before {
+  content: "\37";
+}
+.icon-caret-left:before {
+  content: "\38";
+}
+.icon-monitor:before {
+  content: "\39";
+}
+.icon-caret-down:before {
+  content: "\46";
+}
+.icon-facebook:before {
+  content: "\22";
+}
+.icon-cubes:before {
+  content: "\23";
+}
+.icon-caret-up:before {
+  content: "\43";
+}

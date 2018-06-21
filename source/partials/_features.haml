@@ -6,7 +6,7 @@
         %img( src="/images/number-1.svg" )
 
       %h3
-        Add pool participations
+        Import pool participations
         %span.info
           (optional)
       %p
@@ -18,6 +18,27 @@
       %ul.background-info
         %li
           Protocol rewrites and verifies the pool data to create a file that is tax compliant and compatible with all dividend data
+
+      %a.info.inline-link{ href: "#feature-1" }
+        In depth information
+
+      // Popup contents
+      #feature-1.popup.mfp-hide
+
+        .number
+          %img( src="/images/number-1.svg" )
+        %h3
+          Import pool participations
+
+        %p.introduction
+          If investments are pooled, pool participation data (excel / csv) is uploaded into Protocol in order to determine each pool participant’s pro rata share in dividends received by the pools. This can be done on a monthly or even daily change in ownership basis.
+        %p
+          Not all pool participation data is formatted equally. Therefore Protocol will match the headers from the pool participation data with its own template. If the headers don’t match, you can manually assign them to your pool participation data sheet. Protocol learns and stores any manual changes for a next pool participation import to speed up the import process.
+        %p
+          Protocol rewrites and verifies the pool participation data to create a file that is tax compliant and compatible with all dividend data.
+        %p
+          Protocol’s data analysis filters out mathematical errors, such as negative pool ownerships, pool ownerships that add up to ]more, or less, than 100% on any given date.
+
 
   .right-column
     .feature-image
@@ -57,9 +78,8 @@
         %h3
           Import dividend data
 
-        %p
-          Dividend data (excel / csv) is uploaded into Protocol. Protocol will then determine the best possible WHT recovery claim. In doing so, it will verify various legal basis for a refund of WHT, such as the relevant bilateral tax treaty, the EU treaty, the concept of sovereign immunity etc.
-
+        %p.introduction
+          Dividend data (excel / csv) is uploaded into Protocol, sorted by claim country and claim year
         %p
           Next, Protocol will compare the WHT that has been applied by the custodian against its analysis of the best possible WHT recovery claim. If the comparison concludes that a refund can be obtained over and above what the custodian has applied, Protocol will propose to file a(n) (additional) WHT refund claim, and – in the case of pooled investments – provide a breakdown of the claim amount per pool participant.
   .left-column
@@ -77,17 +97,17 @@
         %img( src="/images/number-3.svg" )
 
       %h3
-        Select claim country and claim year
+        Tax analysis
 
       %p
-        Protocol will generate a claim overview after a succesful import of dividend data. This overview shows which countries  have refundable WHT based on the imported data. The overview also shows already claimed taxes and submission deadlines.
+        After every dividend data import, Protocol will determine the highest possible WHT recovery claim in the relevant claim country.
 
       %p.background-info
         In the background…
 
       %ul.background-info
         %li
-          Protocol has already created compliant documents and datasheets for the tax author
+          Protocol will compare the unrecovered WHT in the dividend data sheets against its analysis of the highest possible WHT recovery claim. In this step, Protocol checks what WHT reduction or recovery has already been applied (e.g. by the custodian).
 
       %a.info.inline-link{ href: "#feature-3" }
         In depth information
@@ -98,15 +118,18 @@
         .number
           %img( src="/images/number-3.svg" )
         %h3
-          Select claim country and claim year
+          Tax analysis
 
+        %p.introduction
+          After every dividend data import, Protocol will determine the highest possible WHT recovery claim in the relevant claim country. In doing so, it will analyze various possible legal bases for a refund of WHT, such as the applicable bilateral tax treaty, the EU treaty, domestic law, etc.
         %p
-          Protocol will generate a claim overview after a succesful import of dividend data. This overview shows which countries  have refundable WHT based on the imported data. The overview also shows already claimed taxes and submission deadlines.
+          Simultaneously, Protocol will compare the unrecovered WHT in the dividend data sheets against its analysis of the highest possible WHT recovery claim. In this step, Protocol checks what WHT reduction or recovery has already been applied (e.g. by the custodian).
+        %p
+          If Protocol concludes that a (further) refund of unrecovered WHT can be obtained, it will propose to file a WHT refund claim, and – in the case of pooled investments – provide an exact breakdown of the claim amount per participant.
+        %p
+          Every successful import of dividend data, will show in Protocol’s tax analysis overview. This overview shows, per year and per country, how much WHT can be reclaimed based on Protocol’s analysis of the imported data.
+          The overview also shows WHT already claimed, and claim filing deadlines.
 
-        %p
-          When a proposal for a WHT recovery claim is accepted, Protocol will generate a standardized WHT refund request letter, which will automatically be addressed to the authorized tax administration in the relevant claim country.
-        %p
-          Protocol will take the variable data from the preceding steps, and insert them into the standardized claim letter. Variable data are, among others, claim year, source country, name of claimants, refund amounts, and a reference to and description of the applicable legal basis for the claim.
 
   .right-column
     .feature-image
@@ -123,17 +146,17 @@
         %img( src="/images/number-4.svg" )
 
       %h3
-        Submit claim
+        Submitting a claim
 
       %p
-        Protocol will inform you which documentation is required to complete the refund claim. When the documentation is complete the claim is ready to submit and Protocol will show you a summary. Pressing submit will initiate the claim and store all files in the cloud.
+        When a WHT recovery claim is selected from the tax analysis overview, Protocol will guide you through the process of completing the claim to meet the claim country’s procedural requirements and submitting the claim.
 
       %p.background-info
         In the background…
 
       %ul.background-info
         %li
-          Protocol learns and stores any permanent fields for a next import to speed up the import process
+          Protocol will generate the requisite claim information and documentation
 
       %a.info.inline-link{ href: "#feature-4" }
         In depth information
@@ -144,16 +167,20 @@
         .number
           %img( src="/images/number-4.svg" )
         %h3
-          Submit claim
+          Submitting a claim
 
+        %p.introduction
+          When a WHT recovery claim is selected from the tax analysis overview, Protocol will guide you through the process of completing the claim to meet the claim country’s procedural requirements and submitting the claim.
+        %h4
+          Automated filing
         %p
-          In the next step, Protocol will inform you which documentation (e.g. refund form, proof of payment, tax residence certificate) is required to complete the refund claim in the relevant claim country, and will assist you in filling out and uploading that documentation. Permanent fields in the documentation and manual changes to the documentation can be stored to speed up the process for the next claim.
-
+          Protocol knows the applicable refund procedure and documentation requirements of each claim country. In claim countries which support electronic filing of refund claims (e.g. the Netherlands, Denmark) the claim will be filed electronically after clicking on the submit claim button, and the claim and supporting documentation will automatically be stored in the WHT position overview. Protocol is automatically updated for any electronic response from the tax administration.
+        %h4
+          Manual filing
         %p
-          After uploading the requisite refund documentation, Protocol will show a summary of the claim prepared, including documents created by Protocol, and the accompanying documents which have been uploaded. If preferred, the claim letter and documentation can be briefly reviewed before submitting.
-
+          In claim countries which do not (yet) support electronic filing , Protocol will generate the requisite claim information and documentation (including a standardized refund request letter addressed to the authorized tax office in the claim country, and automatic pre-filled official refund request forms applied by the claim country) and may ask to upload certain documents like certificates of residence.
         %p
-          Next, a back-up of the claim letter and documentation and can be stored on the user’s own server with the push of a button. By default, however, all claim letters and documents will be stored in the cloud. Finally, the claim letter and documentation can  be submitted by clicking on the submit button.
+          Next, the complete claim can be printed and filed by clicking on the submit claim button. The claim and supporting documentation will automatically be stored in the WHT position overview.
 
   .left-column
     .feature-image

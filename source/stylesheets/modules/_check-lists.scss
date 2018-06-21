@@ -1,0 +1,25 @@
+ul.check-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+
+  li {
+    position: relative;
+    margin: 2rem 3% 2rem 0;
+    width: 30%;
+    padding-left: 4rem;
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: $protocol-green;
+      font-size: 3rem;
+    }
+
+    h4 {
+      margin-top: 0;
+      font-size: 1.8rem;
+    }
+  }
+}

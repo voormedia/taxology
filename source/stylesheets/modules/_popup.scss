@@ -6,6 +6,7 @@ html .mfp-inline-holder .mfp-content {
   padding: 5rem 6rem;
   max-width: 96rem;
   background: white;
+  border-radius: 0.3rem;
   @include desktop {
     min-width: 50rem;
   }
