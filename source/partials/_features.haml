@@ -56,7 +56,7 @@
         Import dividend data
 
       %p
-        Dividend data (excel / csv) is uploaded into Protocol.  Not all dividend data sheets are formatted equally, therefore Protocol will try to match the headers from the datasheet. If the headers don’t match up you can manually assign them to your datasheet.
+        Dividend data (excel / csv) is uploaded into Protocol. Not all dividend data sheets are formatted equally, therefore Protocol will try to match the headers from the datasheet.
 
       %p.background-info
         In the background…
@@ -81,7 +81,13 @@
         %p.introduction
           Dividend data (excel / csv) is uploaded into Protocol, sorted by claim country and claim year
         %p
-          Next, Protocol will compare the WHT that has been applied by the custodian against its analysis of the best possible WHT recovery claim. If the comparison concludes that a refund can be obtained over and above what the custodian has applied, Protocol will propose to file a(n) (additional) WHT refund claim, and – in the case of pooled investments – provide a breakdown of the claim amount per pool participant.
+          As not all dividend data sheets are formatted equally, Protocol will match the headers from the dividend data sheet with its own template. If the headers don’t match, you can manually assign them to your data sheet. Protocol learns and stores any manual changes for a next dividend data import to speed up the import process.
+        %p
+          Protocol’s data analysis filters out errors, for example if share quantity x gross dividend per share does not equal gross dividend amount.
+        %p
+          Protocol automatically converts foreign currency dividends to the source country’s currency prevailing on the pay date, and verifies whether each dividend is correctly backed by dividend vouchers (a.k.a. proof of final distribution).
+        %p
+          If investments are pooled, Protocol applies the dividend data against the pool participations and calculates the unclaimed WHT for each pool participant.
   .left-column
     .feature-image
       %a.image-link{ href: '/images/feature-2.jpg' }
