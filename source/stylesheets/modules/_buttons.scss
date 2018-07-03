@@ -9,7 +9,9 @@
   color: white;
   cursor: pointer;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
   &:hover {
     background: darken($link-color, 10);
   }
