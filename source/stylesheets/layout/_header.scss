@@ -2,7 +2,9 @@ body > header {
   position: relative;
   padding: 0;
   text-align: center;
-
+  @include smartphone {
+    margin-top: 7.5rem;
+  }
   .container {
     @include smartphone {
       position: static;
