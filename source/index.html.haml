@@ -13,9 +13,8 @@
         .logo-with-sub
           %img{ src: "/images/logos/protocol.svg", alt: "Protocol: Automated WHT recovery" }
           %h4 Automated withholding tax recovery
-          %p
-            Protocol is a web based software platform that automates global withholding tax (“WHT”) recovery. It is a Cloud solution, securely accessible from any place in the world that has an internet connection, that can either be operated by us or by the in-house tax/legal department of pension funds or their asset managers.
-
+          %p.introduction
+            Protocol is a web based software platform that minimizes the time, effort, and expense required for preparing and filing WHT refund claims, while at the same time increasing the WHT recovery revenue.
         .screenshot
     %section.usps
       .container
@@ -24,25 +23,25 @@
           %h3
             Effortless and efficient
           %p
-            Protocol takes the effort and inefficiencies out of WHT recovery. Checking for claims, and filing claims becomes a matter of hours instead of days or weeks.
+            Checking for claims, and filing claims becomes a matter of hours instead of days or weeks.
         .usp
-          %img{ src: "images/icon-rocket.svg" }
+          %img{ src: "/images/icon-rocket.svg" }
           %h3
             Improved WHT recovery
           %p
-            Protocol reduces the cost per claim to the bare minimum. No claim will go unnoticed and even small claims are now worth pursuing, so your recovery performance will improve noticeably.
+            Even small claims are now worth pursuing, your recovery performance will improve noticeably.
         .usp
           %img{ src: "/images/icon-calendar.svg" }
           %h3
             Always in control
           %p
-            Protocol’s special features like claim expiration date warnings, real-time claims status overview,  team task assignment and activity log book give you full control.
+            Stay up to date with real-time claims status overview, team task assignment and activity log books.
 
       .container.call-to-action
-        %a.button.button-protocol-primary{ href: "/protocol" }
+        %a.button.button-protocol-primary{ href: "/protocol/" }
           Read more about Protocol
 
-    %section#taxology-introduction
+    %section.taxology-introduction
       %section
         .content
           %img{ src: "/images/logos/taxology.svg", alt: "Taxology: The future of tax" }
@@ -54,7 +53,7 @@
           %p
             The CAAPA Group is an accomplished IT solutions company which has set up several successful companies based on software platforms.
 
-          %a.button.button-taxology-primary{ href: "/protocol" }
+          %a.button.button-taxology-primary{ href: "/about-us/" }
             Read more about Taxology
 
     %section#request-demo
@@ -64,23 +63,5 @@
             Interested in
             %strong automated
             WHT recovery?
-          %p
-            Protocol is  a two-edged sword that minimizes the time, effort, and expense required for preparing and filing WHT refund claims, while at the same time increasing the WHT recovery revenue.
 
-        %form#subForm.js-cm-form{:action => "https://www.createsend.com/t/subscribeerror?description=", "data-id" => "5B5E7037DA78A748374AD499497E309EDE3BECF67BA49B815455F74ACA70483144834A1F4439B91135C71FF81851BED5B47A7F909EF6731EABC87F58E182ACDD", :method => "post"}
-          %input#fieldName{:name => "cm-name", :type => "text", :placeholder => "Your name", :required => ""}/
-          %input#fieldEmail.js-cm-email-input{:name => "cm-kydljuj-kydljuj", :required => "", :type => "email", :placeholder => "Your email-address"}/
-          %input#fielddyuiituy{:name => "cm-f-dyuiituy", :type => "text", :placeholder => "Company", :required => ""}/
-          %textarea#fielddyuiitur{:name => "cm-f-dyuiitur", :placeholder => "Request comments", :required => "" }
-          .check-boxes
-            %label{:for => "fieldtitjwyu-0"}
-              %input#fieldtitjwyu-0{:checked => "checked", :name => "cm-fo-titjwyu", :type => "checkbox", :value => "8268962"}/
-              I would like to see a
-              %strong demo
-            %label{:for => "fieldtitjwyu-1"}
-              %input#fieldtitjwyu-1{:name => "cm-fo-titjwyu", :type => "checkbox", :value => "8268963"}/
-              I would like to receive a (digital)
-              %strong brochure
-
-          %button.js-cm-submit-button{:type => "submit"} Submit
-        %script{:src => "https://js.createsend1.com/javascript/copypastesubscribeformlogic.js", :type => "text/javascript"}
+        = partial "partials/request-form"

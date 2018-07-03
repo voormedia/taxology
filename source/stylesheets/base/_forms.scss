@@ -4,9 +4,9 @@ form {
   textarea,
   button {
     margin: 1rem 0;
-    padding: 0.8rem 1.4rem;
+    padding: 1rem 1.4rem;
     border-radius: 0.5rem;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-family: "Lato", sans-serif;
   }
 
@@ -22,15 +22,6 @@ form {
 
   textarea {
     height: 10rem;
-  }
-
-  input[type="submit"],
-  button {
-    padding: 0.8rem 3rem;
-    border: 0.1rem solid $protocol-primary;
-    color: white;
-    background: $protocol-primary;
-    font-weight: 600;
   }
 
   input[type="radio"] {

@@ -2,7 +2,7 @@ section.usps {
 
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: top;
     margin-bottom: 3rem;
@@ -20,6 +20,7 @@ section.usps {
 
   .usp {
     position: relative;
+    margin: 0 2rem 3rem;
     padding-left: 6rem;
     max-width: 40rem;
 
@@ -34,7 +35,7 @@ section.usps {
     }
 
     @include desktop {
-      width: calc(100% / 3 - 4.5rem);
+      width: calc(100% / 3 - 4rem);
     }
   }
 

@@ -1,0 +1,16 @@
+body.request-demo {
+
+  section {
+    padding: 5% 0;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #EDF1F6 100%);
+  }
+
+  form#subForm {
+    background: white;
+    box-shadow: 1rem 2rem 8rem rgba(black, 0.15);
+
+    input, textarea {
+      border-color: #ddd;
+    }
+  }
+}

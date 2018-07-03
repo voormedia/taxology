@@ -30,11 +30,11 @@ h1 {
     margin-bottom: 1rem;
   }
   header & {
-    font-size: 5rem;
-    line-height: 5rem;
+    font-size: 4rem;
+    line-height: 4rem;
     @include smartphone {
-      font-size: 4rem;
-      line-height: 4rem;
+      font-size: 3rem;
+      line-height: 3rem;
     }
   }
 }
@@ -69,8 +69,8 @@ h4 {
 p {
   margin: 0 0 1.6rem;
   &.introduction {
-    font-size: 1.9rem;
-    line-height: 2.5rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
   }
 
   em {

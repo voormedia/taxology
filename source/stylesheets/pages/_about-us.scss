@@ -1,0 +1,19 @@
+body.about-us {
+
+  > section {
+    padding: 5% 0;
+
+    img.taxology-logo {
+      display: block;
+      max-width: 25rem;
+    }
+  }
+
+  section.taxology-introduction {
+    padding: 0;
+
+    section {
+      background-image: linear-gradient(180deg, #FFFFFF 0%, #EDF1F6 100%);
+    }
+  }
+}

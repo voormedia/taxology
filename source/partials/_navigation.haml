@@ -1,24 +1,30 @@
-.menu-button
+.container
+  .menu-button
 
-%a.logo.mobile-logo{ href: "/" }
-  %img{ src: "/images/logos/taxology-white-sub.svg", alt: "Taxology: The Future of Tax" }
+  %a.logo.mobile-logo{ href: "/" }
+    %img{ src: "/images/logos/taxology-white-sub.svg", alt: "Taxology: The Future of Tax" }
 
 %nav#main{role: "navigation"}
-  .logo
-    %a{ href: "/" }
-      %img{ src: "/images/logos/taxology-white-sub.svg", alt: "Taxology: The Future of Tax" }
+  .container
+    .logo
+      %a{ href: "/" }
+        - if current_page == "home"
+          %img{ src: "/images/logos/taxology-white-sub.svg", alt: "Taxology: The Future of Tax" }
+        - else
+          %img{ src: "/images/logos/taxology-sub.svg", alt: "Taxology: The Future of Tax" }
 
-  %ul
-    %li.dropdown
-      %span Solutions
-      %ul
-        %li
-          %a{ href: "/protocol/" }
-            %img{ src: "/images/logos/protocol.svg", alt: "Protocol" }
-    / %li
-    /   = link_to "Insights", "/insights"
-    %li
-      = link_to "About us", "/about-us/"
-    %li
-      = link_to "Contact", "/contact/"
+    %ul
+      %li.dropdown
+        %a{ href: "/protocol/" }
+          Solutions
+        %ul
+          %li
+            %a{ href: "/protocol/" }
+              %img{ src: "/images/logos/protocol.svg", alt: "Protocol" }
+      / %li
+      /   = link_to "Insights", "/insights"
+      %li
+        = link_to "About us", "/about-us/"
+      %li
+        = link_to "Request a demo", "/request-a-demo/"
 

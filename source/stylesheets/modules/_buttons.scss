@@ -13,6 +13,7 @@
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   &:hover {
+    padding: 1.2rem 2rem 0.8rem;
     background: darken($link-color, 10);
   }
   &.button-protocol-primary {

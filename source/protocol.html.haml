@@ -7,51 +7,51 @@
 
 %main{role: 'main'}
   %article
-
-    %section.protocol-product-intro
+    %section.protocol-introduction
       .container
-        %div.introduction
-          %img{ src: "/images/logos/protocol.svg", alt: "Protocol: Automated WHT recovery" }
-          %p Meet our latest software tool Protocol. It intuitively guides you through automated global withholding tax (“WHT”) recovery for pension funds.
-
+        .logo-with-sub
+          %h2 Automated withholding tax recovery
+          %p.introduction
+            Protocol is a web based software platform that minimizes the time, effort, and expense required for preparing and filing WHT refund claims, while at the same time increasing the WHT recovery revenue.
         .screenshot
-          %img{ src: "/images/protocol-browser.png", alt: "Protocol: withholding tax recovery" }
-
     %section.usps
       .container
         .usp
           %img{ src: "/images/icon-time.svg" }
           %h3
-            Effortless and efficient
+            Faster claim filing
           %p
-            Protocol takes the effort and inefficiencies out of WHT recovery. Checking for claims, and filing claims becomes a matter of hours instead of days or weeks.
+            Checking for claims, and filing claims becomes a matter of hours instead of days or weeks
         .usp
-          %img{ src: "images/icon-rocket.svg" }
+          %img{ src: "/images/icon-costs.svg" }
           %h3
-            Improved WHT recovery
+            Reduce cost per claim
           %p
-            Protocol reduces the cost per claim to the bare minimum. No claim will go unnoticed and even small claims are now worth pursuing, so your recovery performance will improve noticeably.
+            Automation makes for reduced cost per claim filing
+        .usp
+          %img{ src: "/images/icon-small.svg" }
+          %h3
+            Pursue the small claims
+          %p
+            Smaller claims become worth pursuing due to reduced time and costs
+        .usp
+          %img{ src: "/images/icon-cloud.svg" }
+          %h3
+            Secure cloud based access
+          %p
+            Protocol is a web based platform, accessible from any place in the world
+        .usp
+          %img{ src: "/images/icon-rocket.svg" }
+          %h3
+            Improved claim quality
+          %p
+            Protocol validates data before importing, your claims will improve noticably
         .usp
           %img{ src: "/images/icon-calendar.svg" }
           %h3
-            Always in control
+            Track claim status in real time
           %p
-            Protocol’s special features like claim expiration date warnings, real-time claims status overview,  team task assignment and activity log book give you full control.
-
-    %section.about-protocol
-      .container
-        %h2 About protocol
-        %section
-          %p.introduction
-            Protocol is a web based software platform that automates global withholding tax (“WHT”) recovery. It is a cloud solution, securely accessible from any place in the world that has an internet connection.
-
-          %p
-            Protocol has been designed for pension funds. In addition to pension funds, it can be used by pension investment managers, custodians, and tax advisors who are responsible for the WHT recovery of pension funds.
-
-        %section
-          %h4 Why did we design Protocol?
-          %p
-            There is no global standard procedure for WHT recovery. The right to a reduction or refund of WHT, the recovery procedure, the documentation requirements and the statutes of limitations are different in every country, and change periodically. This makes it virtually impossible for pension funds and their investment managers, custodians, and tax advisors to get a solid grip on WHT recovery. As a result, pension funds are missing out on WHT refund opportunities, on a very large scale. Our extensive and in-depth experience in WHT recovery for pension funds has shown us the path to the solution to this problem: Protocol.
+            Stay up to date with real-time claims status overview, team task assignment and activity log books
 
     %section.features
       .container
@@ -96,23 +96,5 @@
             Interested in
             %strong automated
             WHT recovery?
-          %p
-            Protocol is  a two-edged sword that minimizes the time, effort, and expense required for preparing and filing WHT refund claims, while at the same time increasing the WHT recovery revenue.
 
-        %form#subForm.js-cm-form{:action => "https://www.createsend.com/t/subscribeerror?description=", "data-id" => "5B5E7037DA78A748374AD499497E309EDE3BECF67BA49B815455F74ACA70483144834A1F4439B91135C71FF81851BED5B47A7F909EF6731EABC87F58E182ACDD", :method => "post"}
-          %input#fieldName{:name => "cm-name", :type => "text", :placeholder => "Your name", :required => ""}/
-          %input#fieldEmail.js-cm-email-input{:name => "cm-kydljuj-kydljuj", :required => "", :type => "email", :placeholder => "Your email-address"}/
-          %input#fielddyuiituy{:name => "cm-f-dyuiituy", :type => "text", :placeholder => "Company", :required => ""}/
-          %textarea#fielddyuiitur{:name => "cm-f-dyuiitur", :placeholder => "Request comments", :required => "" }
-          .check-boxes
-            %label{:for => "fieldtitjwyu-0"}
-              %input#fieldtitjwyu-0{:checked => "checked", :name => "cm-fo-titjwyu", :type => "checkbox", :value => "8268962"}/
-              I would like to see a
-              %strong demo
-            %label{:for => "fieldtitjwyu-1"}
-              %input#fieldtitjwyu-1{:name => "cm-fo-titjwyu", :type => "checkbox", :value => "8268963"}/
-              I would like to receive a (digital)
-              %strong brochure
-
-          %button.js-cm-submit-button{:type => "submit"} Submit
-        %script{:src => "https://js.createsend1.com/javascript/copypastesubscribeformlogic.js", :type => "text/javascript"}
+        = partial "partials/request-form"
