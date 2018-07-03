@@ -1,26 +1,35 @@
 form {
 
-  input {
+  input,
+  textarea,
+  button {
     margin: 1rem 0;
     padding: 0.8rem 1.4rem;
     border-radius: 0.5rem;
-    font-size: 1.8rem;
-    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.6rem;
+    font-family: "Lato", sans-serif;
   }
 
   input[type="text"],
-  input[type="email"] {
+  input[type="email"],
+  textarea {
     width: 100%;
     border: 0.1rem solid $secondary-font-color;
     color: $secondary-font-color;
     background: white;
+    resize: none;
   }
 
-  input[type="submit"] {
+  textarea {
+    height: 10rem;
+  }
+
+  input[type="submit"],
+  button {
     padding: 0.8rem 3rem;
-    border: 0.1rem solid $protocol-green;
+    border: 0.1rem solid $protocol-primary;
     color: white;
-    background: $protocol-green;
+    background: $protocol-primary;
     font-weight: 600;
   }
 

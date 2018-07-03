@@ -19,8 +19,8 @@ $(document).ready ->
   $('.inline-link').magnificPopup({type:'inline'})
   $('.image-link').magnificPopup({type:'image'})
 
-  $('nav#main').click ->
-    $(this).toggleClass('active')
+  $('.menu-button, nav#main').click ->
+    $('nav#main').toggleClass('active')
 
 $(document).on 'click', 'a.scroll-to', (event) ->
   event.preventDefault()

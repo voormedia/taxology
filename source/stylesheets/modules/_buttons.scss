@@ -1,0 +1,30 @@
+.button {
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  background: $link-color;
+  border-radius: 0.5rem;
+  border: 0 solid;
+  border-bottom: 0.4rem solid darken($link-color, 10);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.8rem;
+  &:hover {
+    background: darken($link-color, 10);
+  }
+  &.button-protocol-primary {
+    background: darken($protocol-primary, 5);
+    border-bottom-color: darken($protocol-primary,15);
+    &:hover {
+      background: darken($protocol-primary, 15);
+    }
+  }
+  &.button-taxology-primary {
+    background: darken($taxology-primary, 5);
+    border-bottom-color: darken($taxology-primary,15);
+    &:hover {
+      background: darken($taxology-primary, 15);
+    }
+  }
+}

@@ -8,6 +8,14 @@
 %main{role: 'main'}
   %article
 
+    %section.protocol-introduction
+      .container
+        .logo-with-sub
+          %img{ src: "/images/logos/protocol.svg", alt: "Protocol: Automated WHT recovery" }
+          %h4 Automated withholding tax recovery
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at porttitor velit. Cras tristique mauris non quam efficitur, ut ultrices urna commodo. Vivamus egestas a neque sed placerat. Duis feugiat pellentesque sagittis. In congue dui ac fermentum fermentum. Pellentesque aliquam venenatis turpis quis sagittis.
+        .screenshot
     %section.usps
       .container
         .usp
@@ -29,58 +37,24 @@
           %p
             Protocol’s special features like claim expiration date warnings, real-time claims status overview,  team task assignment and activity log book give you full control.
 
-    %section#about-protocol
-      .container
+      .container.call-to-action
+        %a.button.button-protocol-primary{ href: "/protocol" }
+          Read more about Protocol
 
-        %h2 About Protocol
+    %section#taxology-introduction
+      %section
+        .content
+          %img{ src: "/images/logos/taxology.svg", alt: "Taxology: The future of tax" }
 
-        %section
           %p.introduction
-            Protocol is a web based software platform that automates global withholding tax (“WHT”) recovery. It is a cloud solution, securely accessible from any place in the world that has an internet connection.
-
+            Taxology is a Dutch fintech start-up, established in 2016 by Jeroen van der Wal and the CAAPA Group.
           %p
-            Protocol has been designed for pension funds. In addition to pension funds, it can be used by pension investment managers, custodians, and tax advisors who are responsible for the WHT recovery of pension funds.
-
-        %section
-          %h4 Why did we design Protocol?
+            Jeroen is an experienced international tax adviser and has advised many pension funds on optimizing their global withholding tax (“WHT”​) recovery.
           %p
-            There is no global standard procedure for WHT recovery. The right to a reduction or refund of WHT, the recovery procedure, the documentation requirements and the statutes of limitations are different in every country, and change periodically. This makes it virtually impossible for pension funds and their investment managers, custodians, and tax advisors to get a solid grip on WHT recovery. As a result, pension funds are missing out on WHT refund opportunities, on a very large scale. Our extensive and in-depth experience in WHT recovery for pension funds has shown us the path to the solution to this problem: Protocol.
+            The CAAPA Group is an accomplished IT solutions company which has set up several successful companies based on software platforms.
 
-    %section#features
-      .container
-        %header
-          %h2 Features
-          %p
-            Protocol intuitively guides pension investment managers through automated global WHT recovery. Depending on whether or not investments are pooled, the recovery process comprises three or four steps.
-
-        = partial("partials/features")
-
-    %section#assurance
-      .container
-        %header
-          %h2 Assurance and compliance features
-          %p Protocol’s open software architecture allows you to integrate and reconcile data with your own ERP software
-
-        %section
-          %ul.check-list
-            %li.icon-check
-              %h4 Data exports
-              Processed data can be extracted by automated exports or by connecting Protocol with your administrative software through API’s.
-            %li.icon-check
-              %h4 Realtime overview
-              Protocol shows a real-time status overview of WHT refund claims, per country per claim year, which can easily be downloaded.
-            %li.icon-check
-              %h4 Audit proof
-              Your WHT reclaim file is always audit proof and audit ready. Protocol’s data analysis reduces the risk of errors and improves the quality of claims.
-            %li.icon-check
-              %h4 Notifications
-              Protocol will issue notifications whenever a WHT recovery claim is set to expire under any given statute of limitations.
-            %li.icon-check
-              %h4 User management
-              Protocol offers multiple user accounts with specific access roles
-            %li.icon-check
-              %h4 Logbook
-              All application and user activities are logged into a logbook, which is available per claim.
+          %a.button.button-taxology-primary{ href: "/protocol" }
+            Read more about Taxology
 
     %section#request-demo
       .container
@@ -92,9 +66,11 @@
           %p
             Protocol is  a two-edged sword that minimizes the time, effort, and expense required for preparing and filing WHT refund claims, while at the same time increasing the WHT recovery revenue.
 
-        %form#subForm{:action => "http://vmarketing.voormedia.com/t/r/s/kydljuj/", :method => "post"}
-          %input#fieldName{:name => "cm-name", :type => "text", :placeholder => "Your name"}/
-          %input#fieldEmail{:name => "cm-kydljuj-kydljuj", :required => "", :type => "email", :placeholder => "Your email-address"}/
+        %form#subForm.js-cm-form{:action => "https://www.createsend.com/t/subscribeerror?description=", "data-id" => "5B5E7037DA78A748374AD499497E309EDE3BECF67BA49B815455F74ACA70483144834A1F4439B91135C71FF81851BED5B47A7F909EF6731EABC87F58E182ACDD", :method => "post"}
+          %input#fieldName{:name => "cm-name", :type => "text", :placeholder => "Your name", :required => ""}/
+          %input#fieldEmail.js-cm-email-input{:name => "cm-kydljuj-kydljuj", :required => "", :type => "email", :placeholder => "Your email-address"}/
+          %input#fielddyuiituy{:name => "cm-f-dyuiituy", :type => "text", :placeholder => "Company", :required => ""}/
+          %textarea#fielddyuiitur{:name => "cm-f-dyuiitur", :placeholder => "Request comments", :required => "" }
           .check-boxes
             %label{:for => "fieldtitjwyu-0"}
               %input#fieldtitjwyu-0{:checked => "checked", :name => "cm-fo-titjwyu", :type => "checkbox", :value => "8268962"}/
@@ -105,5 +81,5 @@
               I would like to receive a (digital)
               %strong brochure
 
-          %input( type="submit" value="submit")
-
+          %button.js-cm-submit-button{:type => "submit"} Submit
+        %script{:src => "https://js.createsend1.com/javascript/copypastesubscribeformlogic.js", :type => "text/javascript"}

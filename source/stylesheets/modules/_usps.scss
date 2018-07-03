@@ -1,27 +1,44 @@
 section.usps {
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: top;
+    margin-bottom: 3rem;
+  }
+
+  .logo-with-sub {
+    img {
+      max-width: 25rem;
+    }
+
+    p {
+      max-width: 60rem;
+    }
+  }
+
   .usp {
-    margin: 0 auto 3rem;
+    position: relative;
+    padding-left: 6rem;
     max-width: 40rem;
-    text-align: center;
 
     img {
-      margin-bottom: 3rem;
-      height: 6rem;
+      position: absolute;
+      left: 0;
+      width: 4rem;
     }
 
     p {
       color: $secondary-font-color;
-      font-size: 1.8rem;
-      line-height: 2.6rem;
     }
 
     @include desktop {
-      float: left;
-      margin-right: 4.5rem;
       width: calc(100% / 3 - 4.5rem);
-      &:nth-child(3n){
-        margin-right: 0;
-      }
     }
+  }
+
+  .call-to-action {
+    justify-content: center;
   }
 }

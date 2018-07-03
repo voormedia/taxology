@@ -1,76 +1,83 @@
-.feature {
-  margin: 2rem 0 0;
-  @include clearfix;
-  @include desktop {
-    margin: 5rem 0;
+section.features {
+  header p {
+    max-width: 57rem;
   }
-  .feature-content {
-    position: relative;
-    margin: 1.5rem 0 0 9rem;
-    @include smartphone {
-      margin: 1.5rem 0 0 7rem;
+
+  .feature {
+    margin: 2rem 0 0;
+    @include clearfix;
+    @include desktop {
+      margin: 5rem 0;
     }
-
-    .number {
-      position: absolute;
-      left: -9rem;
-      top: -1.5rem;
+    .feature-content {
+      position: relative;
+      margin: 1.5rem 0 0 9rem;
       @include smartphone {
-        width: 5rem;
-        left: -7rem;
+        margin: 1.5rem 0 0 7rem;
+      }
 
-        img {
-          width: 100%;
+      .number {
+        position: absolute;
+        left: -9rem;
+        top: -1.5rem;
+        @include smartphone {
+          width: 5rem;
+          left: -7rem;
+
+          img {
+            width: 100%;
+          }
         }
       }
-    }
 
-    h3 {
-      span.info {
-        font-size: 80%;
-        opacity: 0.5;
-        font-weight: normal;
+      h3 {
+        span.info {
+          font-size: 80%;
+          opacity: 0.5;
+          font-weight: normal;
+        }
+      }
+
+      .background-info {
+        color: $secondary-font-color;
+      }
+
+      ul {
+        padding-left: 2.5rem;
+        list-style-image: url("/images/icon-check.svg");
+
+        li {
+          margin-bottom: 1.6rem;
+          padding-left: 0.5rem;
+        }
+      }
+
+      a.info {
+        padding-left: 3rem;
+        background: url("/images/icon-info.svg") no-repeat center left;
       }
     }
 
-    .background-info {
-      color: $secondary-font-color;
-    }
-
-    ul {
-      padding-left: 2.5rem;
-      list-style-image: url("/images/icon-check.svg");
-
-      li {
-        margin-bottom: 1.6rem;
-        padding-left: 0.5rem;
+    .feature-image {
+      img {
+        width: 100%;
+        border: 0.1rem solid lighten($body-font-color,55);
+        box-shadow: 0.2rem 0.2rem 3rem rgba($heading-font-color, 0.1);
       }
     }
 
-    a.info {
-      padding-left: 3rem;
-      background: url("/images/icon-info.svg") no-repeat center left;
+    .right-column {
+      margin-top: 1.5rem;
     }
   }
 
-  .feature-image {
+  .feature.feature-1 {
+    .feature-image
     img {
-      width: 100%;
-      border: 0.1rem solid lighten($body-font-color,55);
-      box-shadow: 0.2rem 0.2rem 3rem rgba($heading-font-color, 0.1);
+      width: calc(100% - 5rem);
+      margin-left: 5rem;
+      border: none;
     }
   }
-
-  .right-column {
-    margin-top: 1.5rem;
-  }
 }
 
-.feature.feature-1 {
-  .feature-image
-   img {
-    width: calc(100% - 5rem);
-    margin-left: 5rem;
-    border: none;
-  }
-}

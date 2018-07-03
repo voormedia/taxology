@@ -1,9 +1,5 @@
 %header#top{role: "banner"}
   .container
-    .logo
-      %a{ href: "/" }
-        %img{ src: "/images/protocol-logo-white.png", alt: "Protocol: Automated WHT recovery" }
-
     = partial "partials/navigation", locals: { current_page: current_page }
 
     - if current_page == "home"
@@ -11,4 +7,4 @@
         %h1 Automated withholding tax recovery
         %p.subtitle
           Meet our latest software tool <strong>Protocol</strong>. It intuitively guides you through automated global withholding tax (“WHT”) recovery for pension funds.
-        %img{ src: "/images/header-screenshot.png", alt: "Protocol: withholding tax recovery" }
+        %img{ src: "/images/protocol-browser.png", alt: "Protocol: withholding tax recovery" }

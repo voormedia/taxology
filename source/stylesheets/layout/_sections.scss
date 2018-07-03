@@ -1,48 +1,10 @@
 article > section {
-  padding: 8rem 0;
-  &#about-protocol {
-    background-color: #F3F6F9;
-    background-image: radial-gradient(50% -20%,100% 100%, #FFFFFF 0%, #EDF1F6 100%);
-
-    .container {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-
-      h2 {
-        width: 100%;
-        text-align: left;
-      }
-
-      section {
-        width: 45%;
-        @include smartphone {
-          width: 100%;
-        }
-
-        p {
-          margin: 0 auto 2rem;
-        }
-
-        h2 {
-          margin-left: auto;
-          margin-right: auto;
-          text-align: left;
-        }
-
-        h4 {
-          margin: 0 auto 1rem;
-        }
-      }
-    }
-  }
-  &#features {
-    header p {
-      max-width: 57rem;
-    }
+  padding: 8% 0;
+  @include smartphone {
+    padding: 6rem 0;
   }
   &#request-demo {
-    border-top: 0.2rem solid $protocol-green;
+    border-top: 0.2rem solid $taxology-primary;
     color: white;
     background-color: #394A5C;
     background-image: radial-gradient(50% 10%,50% 80%, #486784 5%, #394A5C 100%);
@@ -50,10 +12,6 @@ article > section {
     strong {
       color: white;
     }
-  }
-  &#assurance {
-    background-color: #F3F6F9;
-    background-image: radial-gradient(50% -20%,100% 100%, #FFFFFF 0%, #EDF1F6 100%);
   }
 
   header {

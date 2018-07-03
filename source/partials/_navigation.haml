@@ -1,24 +1,24 @@
-%nav#main{role: "navigation"}
+.menu-button
 
-  .logo.mobile-hidden
+%a.logo.mobile-logo{ href: "/" }
+  %img{ src: "/images/logos/taxology-white-sub.svg", alt: "Taxology: The Future of Tax" }
+
+%nav#main{role: "navigation"}
+  .logo
     %a{ href: "/" }
-      %img{ src: "/images/protocol-logo-white.png", alt: "Protocol: Automated WHT recovery" }
+      %img{ src: "/images/logos/taxology-white-sub.svg", alt: "Taxology: The Future of Tax" }
+
   %ul
-    - if current_page == "home"
-      %li
-        = link_to "About protocol", "#about-protocol", class: "scroll-to"
-      %li
-        = link_to "Features", "#features", class: "scroll-to"
-      %li
-        = link_to "Request demo", "#request-demo", class: "scroll-to"
-      %li
-        = link_to "Contact", "#contact", class: "scroll-to"
-    - else
-      %li
-        = link_to "About protocol", "/#about-protocol"
-      %li
-        = link_to "Features", "/#features"
-      %li
-        = link_to "Request demo", "/#request-demo"
-      %li
-        = link_to "Contact", "/#contact"
+    %li.dropdown
+      %span Solutions
+      %ul
+        %li
+          %a{ href: "/protocol" }
+            %img{ src: "/images/logos/protocol.svg", alt: "Protocol" }
+    / %li
+    /   = link_to "Insights", "/insights"
+    %li
+      = link_to "About us", "/about-us"
+    %li
+      = link_to "Contact", "/contact"
+

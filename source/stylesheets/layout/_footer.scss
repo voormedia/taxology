@@ -2,6 +2,7 @@ body > footer {
   padding: 6rem 0 4rem;
   color: white;
   background: $footer-color;
+  @include clearfix;
 
   .container {
     position: relative;
@@ -54,7 +55,9 @@ body > footer {
     }
 
     .copyright {
+      position: relative;
       margin-top: 5rem;
+      width: 14rem;
       font-size: 1.4rem;
       text-transform: uppercase;
       text-align: right;
@@ -69,12 +72,14 @@ body > footer {
       img {
         display: block;
         margin-bottom: -0.5rem;
-        width: 20rem;
+        width: 100%;
+      }
 
-        @include desktop {
-          margin-left: 3rem;
-          width: 14rem;
-        }
+      span {
+        position: absolute;
+        top: 2.5rem;
+        right: 4rem;
+        font-size: 1.2rem;
       }
     }
   }

@@ -1,38 +1,39 @@
-body > header nav {
-  font-weight: 600;
+.menu-button {
+  @include smartphone {
+    position: fixed;
+    top: 4rem;
+    right: 4rem;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background: url("/images/hamburger-icon.svg") no-repeat top right;
+  }
 }
 
 @include smartphone {
   body > header nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
     display: block;
     padding: 8rem 4rem 4rem;
-    width: 100%;
-    background: #222;
-    font-size: 2.5rem;
+    background: darken($heading-font-color, 15);
+    font-size: 2rem;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
-    &:before {
-      content: '';
-      position: fixed;
-      top: 4rem;
-      display: block;
-      width: 2rem;
-      height: 2rem;
-      background: url("/images/hamburger-icon.svg") no-repeat top right;
-      transform: translateX(-450%);
-      transition: transform 0.3s ease-in-out;
-    }
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
     &.active {
       transform: translateX(0);
       &:before {
         transform: translateX(0);
       }
     }
-
 
     .logo {
       float: none;
@@ -48,19 +49,98 @@ body > header nav {
   }
 }
 
+.logo {
+  width: 19rem;
+  @include desktop {
+    float: left;
+  }
+  &.mobile-logo {
+    display: none;
+    margin: 1rem 0 1.5rem;
+    @include smartphone {
+      display: block;
+    }
+  }
+}
+
 @include desktop {
   body > header nav {
-    ul {
-      float: right;
-      list-style: none;
+    display: flex;
+    position: relative;
+    z-index: 99;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
 
-      li {
+    > ul {
+      list-style: none;
+      margin: 0;
+
+      > li {
+        position: relative;
         display: inline-block;
-        margin-left: 3rem;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         font-weight: 600;
-        text-transform: lowercase;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        &:hover {
+          > a, > span {
+            color: lighten($taxology-primary, 10);
+          }
+          ul {
+            right: 0;
+          }
+        }
+
+        a, span {
+          display: inline-block;
+          padding: 1.5rem;
+
+          img {
+            display: block;
+          }
+        }
+
+        span {
+          cursor: default;
+        }
+
+        > ul {
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          top: 100%;
+          right: -999rem;
+          min-width: 100%;
+          background: white;
+          border-radius: 0.3rem;
+          box-shadow: 0.5rem 0.5rem 2rem rgba(0,0,0,0.1);
+          &:before {
+            content: "";
+            position: absolute;
+            top: -0.6rem;
+            margin-left: -0.3rem;
+            width: 0;
+            height: 0;
+            border-left: 0.6rem solid transparent;
+            border-right: 0.6rem solid transparent;
+            border-bottom: 0.6rem solid white;
+            font-size: 0;
+            line-height: 0;
+          }
+
+          li {
+            a {
+              display: block;
+              padding: 1.5rem 2rem;
+              color: $body-font-color;
+              text-transform: lowercase;
+              text-align: left;
+            }
+          }
+        }
       }
     }
   }
 }
+

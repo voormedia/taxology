@@ -1,0 +1,65 @@
+body.home {
+  header {
+    padding: 2rem 0 0;
+  }
+}
+
+section.protocol-introduction {
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    > div {
+      width: 45%;
+      @include smartphone {
+        width: 100%;
+      }
+    }
+
+    .logo-with-sub {
+      img {
+        max-width: 25rem;
+      }
+
+      h4 {
+        margin: 0 0 3rem;
+      }
+    }
+
+    .screenshot {
+      min-height: 25rem;
+      background: url('/images/feature-3.jpg') no-repeat top left / cover;
+      box-shadow: 1rem 3rem 8rem rgba(black, 0.15);
+    }
+  }
+}
+
+section.usps {
+  background-image: radial-gradient(50% 10%,150% 150%, #fcfdfd 0%, #EDF1F6 100%);
+}
+
+section#taxology-introduction {
+  display: flex;
+  padding: 0;
+  justify-content: flex-end;
+  background: url('/images/rotterdam-bg.jpg') no-repeat 50% 50% / cover;
+
+  section {
+    padding: 8%;
+    min-width: 50%;
+    background: white;
+    @include smartphone {
+      padding: 6rem;
+    }
+    .content {
+      max-width: 40rem;
+
+      img {
+        max-width: 25rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

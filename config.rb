@@ -28,7 +28,15 @@ activate :automatic_image_sizes
 set :debug_assets, true
 
 # Rendering settings of Haml and Markdown.
-set :haml, attr_wrapper: '"', ugly: true
+set :haml, attr_wrapper: '"'
+
+# Enable blog
+activate :blog do |blog|
+  blog.permalink = "insights/:title.html"
+  blog.sources = "insights/:title.html"
+  blog.layout = "article"
+  blog.default_extension = ".markdown"
+end
 
 # --------------------------------------------------------------------------------------------------
 # Paths

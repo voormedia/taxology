@@ -8,15 +8,6 @@ html {
 
 
 body {
+  overflow-x: hidden;
   width: 100%;
-  font-size: 1.6rem;
-  line-height: 2.2rem;
-  color: $body-font-color;
-  font-family: "Source Sans Pro", sans-serif;
-  -webkit-font-smoothing: antialiased;
-
-  @include smartphone {
-    font-size: 1.8rem;
-    line-height: 2.6rem;
-  }
 }
