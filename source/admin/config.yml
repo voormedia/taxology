@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: Voormedia/innego # Path to your GitHub repository
+  repo: Voormedia/taxology # Path to your GitHub repository
   branch: main # Branch to update (master by default)
 
 media_folder: "source/images/blog" # Folder where user uploaded files should go
