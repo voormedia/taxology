@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: Voormedia/innego # Path to your GitHub repository
+  branch: main # Branch to update (master by default)
+
+media_folder: "source/images/uploads" # Folder where user uploaded files should go
+
+collections:
+  - name: blog
+    label: Blog
+    folder: blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
