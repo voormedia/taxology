@@ -3,16 +3,16 @@ backend:
   repo: Voormedia/taxology # Path to your GitHub repository
   branch: main # Branch to update (master by default)
 
-media_folder: "source/images/blog" # Folder where user uploaded files should go
+media_folder: "source/images/insights" # Folder where user uploaded files should go
 
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "source/blog" # The path to the folder where the documents are stored
+  - name: "articles" # Used in routes, e.g., /admin/collections/blog
+    label: "Articles" # Used in the UI
+    folder: "source/insights" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "article"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "featured", widget: "image"}

@@ -2,4 +2,6 @@
   %main
     %article.insight
       .container
+        %a{ href: "/insights/" } back to overview
+        %h1=current_page.data.title
         = yield

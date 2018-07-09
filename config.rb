@@ -29,6 +29,7 @@ set :debug_assets, true
 
 # Rendering settings of Haml and Markdown.
 set :haml, attr_wrapper: '"'
+activate :directory_indexes
 
 # --------------------------------------------------------------------------------------------------
 # Paths
@@ -41,6 +42,14 @@ set :js_dir,      'javascripts'
 
 # Pretty URLs - See https://middlemanapp.com/advanced/pretty_urls/
 activate :directory_indexes
+
+activate :blog do |blog|
+  # This will add a prefix to all links, template references and source paths
+  blog.prefix = "insights"
+  blog.sources = "{title}.html"
+  blog.default_extension = ".md"
+end
+
 
 # --------------------------------------------------------------------------------------------------
 # Build configuration
