@@ -25,6 +25,9 @@ main {
     padding-left: 8%;
     padding-right: 8%;
   }
+  &.reading-width {
+    max-width: 84rem;
+  }
 }
 
 .left-column,

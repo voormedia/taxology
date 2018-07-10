@@ -18,15 +18,6 @@ activate :livereload
 set :url_root, data.config.site.root_url
 activate :search_engine_sitemap
 
-# User Bower to manage vendor scripts
-activate :bower
-
-# Automatic image dimensions on image_tag helper (only works with local images)
-activate :automatic_image_sizes
-
-# Split up each required asset into its own script/style tag instead of combining them
-set :debug_assets, true
-
 # Rendering settings of Haml and Markdown.
 set :haml, attr_wrapper: '"'
 activate :directory_indexes
@@ -84,5 +75,5 @@ configure :build do
 
   # Uniquely-named assets (cache buster)
   # Exception: svg & png in images folder because they need to be interchangeable by JS
-  activate :asset_hash, ignore: [%r{images/(.*\.png|.*\.svg)$}i]
+  activate :asset_hash
 end

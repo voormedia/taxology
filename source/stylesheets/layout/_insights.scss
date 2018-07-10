@@ -1,14 +1,73 @@
 section.insights {
   padding: 5rem 0;
+
+  .container {
+    max-width: calc(108rem + 1.5%);
+  }
 }
 
 article.insight {
-  padding-top: 5rem;
   padding-bottom: 5rem;
+
+  header {
+    margin-bottom: 5rem;
+    height: 30vh;
+    min-height: 30rem;
+    max-height: 50rem;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
 
   h1 {
     margin-bottom: 2rem;
     font-size: 4rem;
+  }
+
+  p {
+    margin-bottom: 1.6rem;
+    font-size: 1.6rem;
+  }
+}
+
+section.article-list {
+  margin-bottom: 10rem;
+  &.latest-articles {
+    section article {
+      margin: 0;
+      width: 47%;
+      &:first-child {
+        margin-right: 3%;
+      }
+    }
+
+    h2 {
+      margin: 0 0 4rem;
+    }
+  }
+
+  h1 {
+    font-size: 5rem;
+    margin: 0 1.6% 4rem;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-between;
+
+    article {
+      margin: 0 1.6% 5%;
+      width: 30%;
+      flex-wrap: wrap;
+
+      figure {
+        margin-bottom: 2rem;
+        height: 0;
+        width: 100%;
+        padding-top: 50%;
+        background-size: cover;
+        background-position: 50% 50%;
+      }
+    }
   }
 }
 

@@ -1,7 +1,22 @@
 = wrap_layout :layout do
   %main
     %article.insight
-      .container
+      %header{ style: "background-image: url('#{current_page.data.featured}');" }
+      .container.reading-width
         %a{ href: "/insights/" } back to overview
         %h1=current_page.data.title
         = yield
+    %section.latest-articles.article-list
+      .container.reading-width
+        %h2 Latest insights
+        %section
+          - blog.articles[0...2].each do | related_article |
+            %article
+              %a{ href: "/insights/#{related_article.title.split(" ").join("-").downcase}.html" }
+                %figure{ style: "background-image: url('#{related_article.data.featured}');" }
+              %a{ href: "/insights/#{related_article.title.split(" ").join("-").downcase}.html" }
+                %h3= related_article.title
+              %p= related_article.data.summary
+              %a{ href: "/insights/#{related_article.title.split(" ").join("-").downcase}.html" }
+                Read more
+

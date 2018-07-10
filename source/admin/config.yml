@@ -4,6 +4,7 @@ backend:
   branch: main # Branch to update (master by default)
 
 media_folder: "source/images/insights" # Folder where user uploaded files should go
+public_folder: "source" # CMS now knows 'source' is the public folder and will strip this from the path
 
 collections:
   - name: "insights" # Used in routes, e.g., /admin/collections/blog
@@ -17,3 +18,4 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "featured", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Summary", name: "summary", widget: "text"}

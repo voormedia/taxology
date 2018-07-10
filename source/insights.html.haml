@@ -6,9 +6,18 @@
 ---
 
 %main
-  %section.insights
+  %section.insights.article-list
     .container
-      %h2 Insights
-      - blog.articles.each do | article |
-        %a{ href: "/insights/#{article.title.split(" ").join("-").downcase}.html" }
-          %h3= article.title
+      %h1 Insights
+      %section
+        - blog.articles.each do | article |
+          %article
+            %a{ href: "/insights/#{article.title.split(" ").join("-").downcase}.html" }
+              %figure{ style: "background-image: url('#{article.data.featured}');" }
+            %a{ href: "/insights/#{article.title.split(" ").join("-").downcase}.html" }
+              %h3= article.title
+            %p
+              %strong=article.date.strftime('%b %e %Y')
+              = article.data.summary
+            %a{ href: "/insights/#{article.title.split(" ").join("-").downcase}.html" }
+              Read more
