@@ -46,6 +46,7 @@ activate :directory_indexes
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   blog.prefix = "insights"
+  blog.permalink = "{title}.html"
   blog.sources = "{title}.html"
   blog.default_extension = ".md"
 end
@@ -74,9 +75,6 @@ configure :build do
                          remove_input_attributes: false,
                          remove_quotes: false
 
-  # Compress images (default)
-  require 'middleman-smusher'
-  activate :smusher
 
   # Compress ALL images (advanced)
   # Before activating the below, follow setup instructions on https://github.com/toy/image_optim

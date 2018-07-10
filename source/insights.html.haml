@@ -10,5 +10,5 @@
     .container
       %h2 Insights
       - blog.articles.each do | article |
-        %a{ href: "/insights/#{article.title.split(" ").join("-").downcase}/" }
+        %a{ href: "/insights/#{article.title.split(" ").join("-").downcase}.html" }
           %h3= article.title
