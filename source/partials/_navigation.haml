@@ -23,8 +23,16 @@
               %img{ src: "/images/logos/protocol.svg", alt: "Protocol" }
       %li
         = link_to "Insights", "/insights/"
-      %li
-        = link_to "About us", "/about-us/"
+      %li.dropdown
+        %a{ href: "/about-us/" }
+          About us
+        %ul
+          %li
+            %a{ href: "/about-us/" }
+              About Taxology
+          %li
+            %a{ href: "/about-us/careers/" }
+              Careers
       %li
         = link_to "Request a demo", "/request-a-demo/"
 
