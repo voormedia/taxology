@@ -3,6 +3,7 @@ body.protocol {
   > header {
     padding-bottom: 0;
     background-image: url("/images/protocol-header-bg.jpg");
+    background-size: cover;
     color: white;
     &:after {
       content: '';

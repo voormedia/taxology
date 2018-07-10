@@ -21,9 +21,18 @@ article.insight {
   }
 
   h1 {
-    margin: 1rem 0 3rem;
+    margin: 2rem 0;
     font-size: 4rem;
     line-height: 4.5rem;
+  }
+
+  .post-meta {
+    display: flex;
+
+    p.date {
+      margin: 0 1rem 3rem;
+      font-weight: bold;
+    }
   }
 
   p {
@@ -41,6 +50,10 @@ section.article-list {
       &:first-child {
         margin-right: 3%;
       }
+      @include smartphone {
+        margin: 0 0 4rem;
+        width: 100%;
+      }
     }
 
     h2 {
@@ -55,12 +68,15 @@ section.article-list {
 
   section {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 
     article {
       margin: 0 1.6% 5%;
       width: 30%;
-      flex-wrap: wrap;
+      @include smartphone {
+        margin: 0 0 4rem;
+        width: 100%;
+      }
 
       figure {
         margin-bottom: 2rem;

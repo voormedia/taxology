@@ -56,6 +56,9 @@ h3 {
     margin-bottom: 2.5rem;
     font-weight: normal;
   }
+  .reading-width & {
+    margin: 3.2rem 0 1.6rem;
+  }
 }
 
 h4 {
@@ -92,9 +95,33 @@ a {
   }
 }
 
+blockquote {
+  margin: 2rem 0;
+  padding-left: 3rem;
+  border-left: 0.3rem solid $taxology-primary;
+  font-style: italic;
+  color: $taxology-secondary;
+
+  em {
+    display: block;
+    margin-top: 2rem;
+    font-style: normal;
+    color: darken($taxology-secondary, 15);
+    strong {
+      display: block;
+      color: darken($taxology-secondary, 15);
+    }
+  }
+}
+
 article > section ul {
 
   li {
     margin-bottom: 1rem;
   }
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  vertical-align: middle;
 }

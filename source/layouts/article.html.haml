@@ -2,8 +2,17 @@
   %main
     %article.insight
       .container.reading-width
-        %a{ href: "/insights/" } back to overview
-        %h1=current_page.data.title
+        %a.icon-angle-left{ href: "/insights/" } back to overview
+        %h1= current_page.data.title
+        .post-meta
+          %ul.tags
+            - current_page.tags.each do | tag |
+              %li
+                %a{ href: "/insights/topics/#{tag}.html" }
+                  = tag
+
+          %p.date= current_page.date.strftime('%e %b %Y')
+
       %header{ style: "background-image: url('#{current_page.data.featured}');" }
       .container.reading-width
         = yield
@@ -17,7 +26,10 @@
                 %figure{ style: "background-image: url('#{related_article.data.featured}');" }
               %a{ href: "/insights/#{related_article.title.split(" ").join("-").downcase}.html" }
                 %h3= related_article.title
-              %p= related_article.data.summary
+              %p
+                %strong= related_article.date.strftime('%e %b %Y')
+                = related_article.data.summary
               %a{ href: "/insights/#{related_article.title.split(" ").join("-").downcase}.html" }
                 Read more
+                %span.icon-angle-right
 

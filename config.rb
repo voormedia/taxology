@@ -40,6 +40,8 @@ activate :blog do |blog|
   blog.permalink = "{title}.html"
   blog.sources = "{title}.html"
   blog.default_extension = ".md"
+  blog.tag_template = "tag.html"
+  blog.taglink = "topics/{tag}.html"
 end
 
 

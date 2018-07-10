@@ -1,16 +1,20 @@
 ---
-  title: "Insights"
-  body_classes: insights
-  meta_description:
-  meta_keywords:
+  title: Tagged insights
+  body_classes: page
 ---
 
 %main
-  %section.insights.article-list
+  %section.insights.article-list.tags
     .container
-      %h1 Insights
+      %a.icon-angle-left{ href: "/insights/" }
+        back to Insights
+        %br
+        %br
+      %h1
+        Insights tagged with
+        %strong= tagname
       %section
-        - blog.articles.each do | article |
+        - page_articles.each do | article |
           %article
             %a{ href: "/insights/#{article.title.parameterize}.html" }
               %figure{ style: "background-image: url('#{article.data.featured}');" }
