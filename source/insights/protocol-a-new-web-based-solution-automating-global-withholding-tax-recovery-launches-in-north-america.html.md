@@ -16,17 +16,11 @@ The software platform, aimed at pension funds, investment managers, custodians, 
 
 > Pension funds are missing out on WHT refund opportunities on a very large scale because it is so difficult for pension funds and their investment managers to get a solid grip on WHT recovery. Our solution helps pension fund managers improve their coverage ratio with several basis points, by picking up money they are currently leaving on the table because they are unaware they can reclaim it, or because they are aware, but the manual labour involved does not justify the claims. 
 >
-> \
->
->
 > _Jeroen van der Wal, managing director and founder of Taxology, the developers behind Protocol._
 
 Protocol, developed by Rotterdam-headquartered fintech company Taxology, is an intuitive, secure, Cloud-based platform, which reduces the cost per WHT claim by taking pension fund managers through a three step process from inputting pool participation data where required and importing dividend data, to submitting a claim.
 
 > The platform generates a claim overview based on the imported dividend data showing which countries have refundable taxes, indicating which taxes have already been claimed and showing submission deadlines. Protocol then indicates which supporting documentation is required by the claim country and, once the claim is initiated, stores all files in the Cloud. Supporting documentation is filled out automatically from Protocol’s output and, where the claim country’s tax administration supports electronic filing, such as the Netherlands or Denmark, the entire claim is filed electronically. 
->
-> \
->
 >
 > _Casper Plat, chief operating officer, Taxology._
 
