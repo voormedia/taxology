@@ -1,12 +1,16 @@
 ---
 layout: article
-title: Fintech Tackles Withholding Tax Recovery Procedures in EU Which Cost Investors Billions
-date: 2018-07-01
+title: >-
+  Fintech Tackles Withholding Tax Recovery Procedures in EU Which Cost Investors
+  Billions
+date: 2018-07-01T00:00:00.000Z
 featured: /images/insights/blog-article.jpg
-tags: blog
-author: Jeroen van der Wal
-authordescription: Founder and CEO of the fintech Taxology, which developed the Protocol platform that automates the identification of tax relief entitlement and more.
-summary: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+tag: blog
+summary: >-
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+  when an unknown printer took a galley of type and scrambled it to make a type
+  specimen book.
 ---
 
 As a general rule, all cross-border portfolio investment triggers “withholding taxes” in the source country. The source country is where the funds are invested and is the source the return on investment. The justification for applying withholding taxes lies in the fact, without it, the foreign investor would benefit from the infrastructure and productivity of the source country without contributing to it.
