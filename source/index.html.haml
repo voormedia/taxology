@@ -55,6 +55,28 @@
           %a.button.button-taxology-primary{ href: "/about-us/" }
             Read more about Taxology
 
+    %section.insights.article-list
+      .container
+        %h2 Latest insights
+        %section
+          - blog.articles[0..3].each do | article |
+            %article
+              %a.figure{ href: "/insights/#{article.title.parameterize}.html" }
+                .tags
+                  - article.tags.each do | tag |
+                    .tag{ class: "tag-#{tag.parameterize}" }
+                      = tag
+                %figure{ style: "background-image: url('#{article.data.featured}');" }
+              %a{ href: "/insights/#{article.title.parameterize}.html" }
+                %h3= article.title
+              %p
+                %strong=article.date.strftime('%e %b %Y')
+                = article.data.summary
+              %a{ href: "/insights/#{article.title.parameterize}.html" }
+                Read more
+                %span.icon-angle-right
+
+
     %section#request-demo
       .container
         %header

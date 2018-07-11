@@ -28,6 +28,15 @@ body.home {
       }
     }
   }
+
+  section.insights {
+    margin: 0;
+    padding: 8% 0;
+    background-image: linear-gradient(#EDF1F6 0%, #FFFFFF 50%);
+    @include smartphone {
+      padding: 5rem 0;
+    }
+  }
 }
 
 section.protocol-introduction {
@@ -65,4 +74,5 @@ section.protocol-introduction {
 section.usps {
   background-image: linear-gradient(180deg, #FFFFFF 0%, #EDF1F6 100%);
 }
+
 
