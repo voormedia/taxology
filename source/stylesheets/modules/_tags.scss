@@ -8,7 +8,6 @@ ul.tags {
     margin: 0 1rem 0 0;
     a {
       padding: 0.5rem 1.5rem 0.8rem;
-      background: $taxology-secondary;
       font-weight: bold;
       color: white;
       border-radius: 0.2rem;
@@ -22,5 +21,38 @@ section.tags {
   h1 {
     font-size: 4rem;
     line-height: 5rem;
+  }
+}
+
+.figure {
+  display: block;
+  position: relative;
+
+  .tags {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+
+    .tag {
+      padding: 0.3rem 1.2rem 0.6rem;
+      font-weight: bold;
+      color: white;
+      border-radius: 0.2rem;
+      white-space: nowrap;
+    }
+  }
+}
+
+.tag {
+  background: $taxology-primary;
+  &.tag-press-release {
+    background: $taxology-secondary;
+  }
+  &.tag-blog {
+    background: $protocol-secondary;
+  }
+  &.tag-news {
+    background: $protocol-primary;
   }
 }

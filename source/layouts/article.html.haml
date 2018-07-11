@@ -8,7 +8,7 @@
           %ul.tags
             - current_page.tags.each do | tag |
               %li
-                %a{ href: "/insights/topics/#{tag}.html" }
+                %a.tag{ class: "tag-#{tag.parameterize}", href: "/insights/topics/#{tag}.html" }
                   = tag
 
           %p.date= current_page.date.strftime('%e %b %Y')
@@ -16,6 +16,11 @@
       %header{ style: "background-image: url('#{current_page.data.featured}');" }
       .container.reading-width
         = yield
+        %footer
+          .author
+            = current_page.data.author
+          .author-description
+            = current_page.data.authordescription
     %section.latest-articles.article-list
       .container.reading-width
         %h2 Latest insights
