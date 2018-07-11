@@ -21,7 +21,7 @@ section.article-list {
 
   h1, h2 {
     font-size: 5rem;
-    margin: 0 1.6% 4rem;
+    margin: 0 2.6% 4rem;
   }
 
   section {
@@ -29,18 +29,18 @@ section.article-list {
     flex-wrap: wrap;
 
     article {
-      margin: 0 1.6% 5%;
-      width: 30%;
+      margin: 0 2.6% 5%;
+      width: 28%;
       @include smartphone {
         margin: 0 0 4rem;
         width: 100%;
       }
 
       figure {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         height: 0;
         width: 100%;
-        padding-top: 50%;
+        padding-top: 66%;
         background-size: cover;
         background-position: 50% 50%;
       }
