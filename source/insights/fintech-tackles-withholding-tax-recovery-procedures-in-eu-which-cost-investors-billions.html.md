@@ -5,7 +5,7 @@ title: >-
   Billions
 date: 2018-07-01T00:00:00.000Z
 featured: /images/insights/blog-article.jpg
-tag: blog
+tags: blog
 summary: >-
   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
