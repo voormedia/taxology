@@ -29,16 +29,17 @@
       .container.reading-width
         %h2 Latest insights
         %section
-          - blog.articles[0...2].each do | related_article |
+
+          - blog.articles[0..2].reject{ |article| article.data.title == current_page.data.title }.each do | latest_article |
             %article
-              %a{ href: "/insights/#{related_article.title.split(" ").join("-").downcase}.html" }
-                %figure{ style: "background-image: url('#{related_article.data.featured}');" }
-              %a{ href: "/insights/#{related_article.title.split(" ").join("-").downcase}.html" }
-                %h3= related_article.title
+              %a{ href: "/insights/#{latest_article.title.split(" ").join("-").downcase}.html" }
+                %figure{ style: "background-image: url('#{latest_article.data.featured}');" }
+              %a{ href: "/insights/#{latest_article.title.split(" ").join("-").downcase}.html" }
+                %h3= latest_article.title
               %p
-                %strong= related_article.date.strftime('%e %b %Y')
-                = related_article.data.summary
-              %a{ href: "/insights/#{related_article.title.split(" ").join("-").downcase}.html" }
+                %strong= latest_article.date.strftime('%e %b %Y')
+                = latest_article.data.summary
+              %a{ href: "/insights/#{latest_article.title.split(" ").join("-").downcase}.html" }
                 Read more
                 %span.icon-angle-right
 

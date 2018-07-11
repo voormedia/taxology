@@ -5,7 +5,7 @@ section.article-list {
       margin: 0;
       width: 47%;
       &:first-child {
-        margin-right: 3%;
+        margin-right: 6%;
       }
       @include smartphone {
         margin: 0 0 4rem;
