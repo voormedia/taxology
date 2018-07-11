@@ -14,7 +14,10 @@ body {
   padding: 0;
 
   .frame-content {
+    margin: 0 auto;
     padding: 3rem;
+    width: 100%;
+    max-width: 80rem;
 
     .nc-widgetPreview {
 
