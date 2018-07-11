@@ -6,6 +6,10 @@ title: >-
 date: 2018-07-01T00:00:00.000Z
 featured: /images/insights/blog-article.jpg
 tags: blog
+author: Jeroen van der Wal
+authordescription: >-
+  Founder and CEO of the fintech Taxology, which developed the Protocol platform
+  that automates the identification of tax relief entitlement.  
 summary: >-
   Within the EU, no two withholding tax relief procedures are the same. Each
   country has its own procedure, relief forms, statute of limitations, and its
