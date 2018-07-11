@@ -42,17 +42,34 @@ article.insight {
   }
 
   footer {
+    display: flex;
     margin-top: 3rem;
     padding: 3rem 0;
     border-top: 0.1rem solid $taxology-secondary;
     border-bottom: 0.3rem solid $taxology-secondary;
+
+    .avatar {
+      &.jeroen-van-der-wal {
+        margin-right: 3rem;
+        width: 10rem;
+        height: 10rem;
+        background: url("/images/avatars/jeroen-van-der-wal.jpg") no-repeat top left;
+        background-size: cover;
+        border-radius: 10rem;
+      }
+    }
+
     .author {
-      margin-bottom: 0.5rem;
+      margin: 0.5rem 0;
       font-size: 1.8rem;
       font-weight: bold;
-    }
-    .author-description {
-      max-width: 50rem;
+
+      .author-description {
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: normal;
+        max-width: 50rem;
+      }
     }
   }
 }

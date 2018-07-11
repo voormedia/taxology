@@ -18,10 +18,13 @@
         = yield
         - if current_page.data.author
           %footer
+            .avatar{ class: current_page.data.author.parameterize }
             .author
               = current_page.data.author
-            .author-description
-              = current_page.data.authordescription
+              .author-description
+                - if current_page.data.author = "Jeroen van der Wal"
+                  Founder and CEO of the fintech Taxology, which developed the Protocol platform that automates the identification of tax relief entitlement.
+
     %section.latest-articles.article-list
       .container.reading-width
         %h2 Latest insights
