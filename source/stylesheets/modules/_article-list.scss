@@ -1,0 +1,53 @@
+section.article-list {
+  margin-bottom: 10rem;
+  &.latest-articles {
+    section article {
+      margin: 0;
+      width: 47%;
+      &:first-child {
+        margin-right: 3%;
+      }
+      @include smartphone {
+        margin: 0 0 4rem;
+        width: 100%;
+      }
+    }
+
+    h2 {
+      margin: 0 0 4rem;
+    }
+  }
+
+  h1 {
+    font-size: 5rem;
+    margin: 0 1.6% 4rem;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+
+    article {
+      margin: 0 1.6% 5%;
+      width: 30%;
+      @include smartphone {
+        margin: 0 0 4rem;
+        width: 100%;
+      }
+
+      figure {
+        margin-bottom: 2rem;
+        height: 0;
+        width: 100%;
+        padding-top: 50%;
+        background-size: cover;
+        background-position: 50% 50%;
+      }
+
+      h3 {
+        font-size: 2.1rem;
+        line-height: 2.6rem;
+      }
+    }
+  }
+}

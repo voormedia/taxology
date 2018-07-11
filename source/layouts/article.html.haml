@@ -16,11 +16,12 @@
       %header{ style: "background-image: url('#{current_page.data.featured}');" }
       .container.reading-width
         = yield
-        %footer
-          .author
-            = current_page.data.author
-          .author-description
-            = current_page.data.authordescription
+        - if current_page.data.author
+          %footer
+            .author
+              = current_page.data.author
+            .author-description
+              = current_page.data.authordescription
     %section.latest-articles.article-list
       .container.reading-width
         %h2 Latest insights
