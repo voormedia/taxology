@@ -3,4 +3,8 @@ html {
   .nc-entryEditor-container {
     max-width: 100%;
   }
+
+  .nc-entryEditor-previewPane {
+    overflow-y: hidden;
+  }
 }
