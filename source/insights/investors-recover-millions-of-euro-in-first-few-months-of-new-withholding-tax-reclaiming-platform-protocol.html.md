@@ -4,7 +4,7 @@ title: >-
   Investors recover millions of euro in first few months of new withholding tax
   reclaiming platform, Protocol
 date: 2018-06-20T00:00:00.000Z
-featured: /source/bright-business-chart.jpg
+featured: /images/insights/bright-business-chart.jpg
 tags: press release
 author: Jeroen van der Wal
 summary: >-
