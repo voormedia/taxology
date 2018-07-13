@@ -32,14 +32,14 @@
 
           - blog.articles[0..2].reject{ |article| article.data.title == current_page.data.title }.each do | latest_article |
             %article
-              %a{ href: "/insights/#{latest_article.title.split(" ").join("-").downcase}.html" }
+              %a{ href: "/insights/#{latest_article.slug}.html" }
                 %figure{ style: "background-image: url('#{latest_article.data.featured}');" }
-              %a{ href: "/insights/#{latest_article.title.split(" ").join("-").downcase}.html" }
+              %a{ href: "/insights/#{latest_article.slug}.html" }
                 %h3= latest_article.title
               %p
                 %strong= latest_article.date.strftime('%e %b %Y')
                 = latest_article.data.summary
-              %a{ href: "/insights/#{latest_article.title.split(" ").join("-").downcase}.html" }
+              %a{ href: "/insights/#{latest_article.slug}.html" }
                 Read more
                 %span.icon-angle-right
 

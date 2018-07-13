@@ -12,17 +12,17 @@
       %section
         - blog.articles.each do | article |
           %article
-            %a.figure{ href: "/insights/#{article.title.parameterize}.html" }
+            %a.figure{ href: "/insights/#{article.slug}.html" }
               .tags
                 - article.tags.each do | tag |
                   .tag{ class: "tag-#{tag.parameterize}" }
                     = tag
               %figure{ style: "background-image: url('#{article.data.featured}');" }
-            %a{ href: "/insights/#{article.title.parameterize}.html" }
+            %a{ href: "/insights/#{article.slug}.html" }
               %h3= article.title
             %p
               %strong=article.date.strftime('%e %b %Y')
               = article.data.summary
-            %a{ href: "/insights/#{article.title.parameterize}.html" }
+            %a{ href: "/insights/#{article.slug}.html" }
               Read more
               %span.icon-angle-right
