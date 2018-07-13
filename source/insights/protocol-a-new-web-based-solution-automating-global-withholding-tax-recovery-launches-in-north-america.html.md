@@ -4,7 +4,7 @@ title: >-
   Protocol, A New Web-Based Solution Automating Global Withholding Tax Recovery,
   Launches In North America
 date: '2018-05-15'
-featured: /source/images/insights/blog-post-protocol.jpg
+featured: /images/insights/blog-protocol.jpg
 tags: press release
 author: Jeroen van der Wal
 summary: >-
