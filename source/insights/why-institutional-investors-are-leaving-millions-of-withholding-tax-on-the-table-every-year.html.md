@@ -2,7 +2,7 @@
 layout: article
 title: >-
   Why institutional investors are leaving millions of withholding tax on the
-  table every year.
+  table; every year.
 date: 2018-07-01T00:00:00.000Z
 featured: /images/insights/blog-article.jpg
 tags: blog
