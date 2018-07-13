@@ -3,7 +3,7 @@ backend:
   repo: Voormedia/taxology # Path to your GitHub repository
   branch: main # Branch to update (master by default)
 
-public_folder: "source" # CMS now knows 'source' is the public folder and will strip this from the path
+# public_folder: "source" # CMS now knows 'source' is the public folder and will strip this from the path
 media_folder: "source/images/insights" # Folder where user uploaded files should go
 
 collections:
