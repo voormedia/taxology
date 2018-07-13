@@ -5,7 +5,8 @@ title: >-
   Launches In North America
 date: '2018-05-15'
 featured: /images/insights/blog-post-protocol.jpg
-tags: 'press release'
+tags: press release
+author: Jeroen van der Wal
 summary: >-
   The software platform, aimed at pension funds, investment managers,
   custodians, and tax advisors, means checking and filing for WHT claims can be
