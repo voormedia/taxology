@@ -10,9 +10,7 @@ author: Jeroen van der Wal
 summary: >-
   Within the EU, no two withholding tax relief procedures are the same. Each
   country has its own procedure, relief forms, statute of limitations, and its
-  own take on what supporting documentation should be submitted. Knowing your
-  way around and complying with all of these different procedures faces
-  investors with tremendous compliance costs.
+  own take on what supporting documentation should be submitted.
 ---
 ### Withholding taxes
 
