@@ -1,10 +1,16 @@
 ---
 layout: article
-title: Investors recover millions of euro in first few months of new withholding tax reclaiming platform, Protocol
-date: 2018-06-20
-tags: 'press release'
-featured: /images/insights/rotterdam-bg.jpg
-summary: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+title: >-
+  Investors recover millions of euro in first few months of new withholding tax
+  reclaiming platform, Protocol
+date: 2018-06-20T00:00:00.000Z
+featured: /source/bright-business-chart-210607.jpg
+tags: press release
+author: Jeroen van der Wal
+summary: >-
+  Pension fund investors have recovered more than EUR three million in the first
+  few months of a new automated withholding tax (WHT) recovery platform,
+  Protocol, following its North American launch earlier this year.
 ---
 
 Pension fund investors have recovered more than EUR three million in the first few months of a new automated withholding tax (WHT) recovery platform, Protocol, following its North American launch earlier this year. The web-based platform is the brainchild of fintech start-up Taxology, and is being rolled out in phases around the globe, geared primarily at pension funds and pension asset managers to help them reclaim millions in recoverable withholding tax.
