@@ -1,8 +1,8 @@
 ---
 layout: article
 title: >-
-  Fintech Tackles Withholding Tax Recovery Procedures in EU Which Cost Investors
-  Billions
+  Why institutional investors are leaving millions of withholding tax on the
+  table; every year.
 date: 2018-07-01T00:00:00.000Z
 featured: /images/insights/blog-article.jpg
 tags: blog
