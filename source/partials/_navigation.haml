@@ -11,7 +11,8 @@
         - if current_page == "home"
           %img{ src: "/images/logos/taxology-white-sub.svg", alt: "Taxology: The Future of Tax" }
         - else
-          %img{ src: "/images/logos/taxology-sub.svg", alt: "Taxology: The Future of Tax" }
+          %img.desktop-only{ src: "/images/logos/taxology-sub.svg", alt: "Taxology: The Future of Tax" }
+          %img.mobile-only{ src: "/images/logos/taxology-white-sub.svg", alt: "Taxology: The Future of Tax" }
 
     %ul
       %li.dropdown
@@ -20,7 +21,8 @@
         %ul
           %li
             %a{ href: "/protocol/" }
-              %img{ src: "/images/logos/protocol.svg", alt: "Protocol" }
+              %img.desktop-only{ src: "/images/logos/protocol.svg", alt: "Protocol" }
+              %span.mobile-only Protocol
       %li
         = link_to "Insights", "/insights/"
       %li.dropdown
@@ -35,4 +37,3 @@
               Careers
       %li
         = link_to "Request a demo", "/request-a-demo/"
-
