@@ -26,8 +26,12 @@ article > section {
 section.taxology-introduction {
   display: flex;
   padding: 0;
-  justify-content: flex-end;
-  background: url('/images/rotterdam-bg.jpg') no-repeat 50% 50% / cover;
+
+  figure {
+    flex-basis: 50%;
+    flex-shrink: 100;
+    background: url('/images/taxology-about.jpg') no-repeat 0% 50% / cover;
+  }
 
   section {
     padding: 8%;

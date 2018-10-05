@@ -185,8 +185,11 @@
             transition: 0.2s opacity ease-out;
           }
 
-          a, span {
+          a {
             display: inline-block;
+          }
+
+          a, span {
             padding: 1.5rem;
             color: $body-font-color;
 
