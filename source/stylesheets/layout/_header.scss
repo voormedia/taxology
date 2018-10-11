@@ -47,10 +47,10 @@ body > header {
     }
 
     img.browser {
+      display: block;
       width: 150%;
       margin-top: 5%;
       margin-left: -5%;
-      margin-bottom: -20%;
       box-shadow: 0 2rem 5rem rgba(black, 0.5);
       @include desktop {
         width: 100%;

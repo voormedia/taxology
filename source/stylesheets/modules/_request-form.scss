@@ -13,6 +13,7 @@ form#subForm {
   }
 
   button {
+    margin-top: 2rem;
     width: 100%;
     @include desktop {
       float: right;
@@ -25,6 +26,11 @@ form#subForm {
     @include desktop {
       float: left;
       max-width: 60%;
+    }
+
+    p {
+      margin: 1rem 0;
+      font-size: 1.8rem;
     }
 
     label {

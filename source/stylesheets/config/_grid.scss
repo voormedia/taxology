@@ -28,6 +28,9 @@ main {
   &.reading-width {
     max-width: 84rem;
   }
+  &.centered {
+    text-align: center;
+  }
 }
 
 .left-column,

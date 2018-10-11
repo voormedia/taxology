@@ -14,3 +14,21 @@ body.request-demo {
     }
   }
 }
+
+
+.protocol-brochure {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 50rem;
+  padding-left: 18rem;
+  color: $body-font-color;
+  text-align: left;
+  height: 30rem;
+
+  img {
+    position: absolute;
+    left: 0;
+    width: 15rem;
+  }
+}

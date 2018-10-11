@@ -18,6 +18,13 @@ document.onreadystatechange = ->
 $(document).ready ->
   $('.inline-link').magnificPopup({type:'inline'})
   $('.image-link').magnificPopup({type:'image'})
+  $('.video-link').magnificPopup({
+    items: {
+      src: '<div class="video-popup"><div class="video-container"><iframe src="https://player.vimeo.com/video/294563331?autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>',
+      type:'inline'
+    }
+  })
+
 
   $('.menu-button, nav#main').click ->
     $('nav#main').toggleClass('active')
@@ -25,4 +32,3 @@ $(document).ready ->
 $(document).on 'click', 'a.scroll-to', (event) ->
   event.preventDefault()
   $('html, body').animate { scrollTop: $($.attr(this, 'href')).offset().top }, 500
-
