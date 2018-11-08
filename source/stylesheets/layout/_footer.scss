@@ -6,6 +6,13 @@ body > footer {
 
   .container {
     position: relative;
+    @include desktop {
+      display: flex;
+
+      > div {
+        margin-right: 8rem;
+      }
+    }
 
     .contact-details {
       img {
@@ -15,13 +22,6 @@ body > footer {
       }
       p > span {
         font-size: 1.8rem;
-      }
-    }
-
-    @include desktop {
-      .contact-details {
-        float: left;
-        margin-right: 8rem;
       }
     }
 
