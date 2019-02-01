@@ -1,9 +1,33 @@
 body.careers {
+
+  .jobs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    a.job {
+      width: 100%;
+      @include desktop {
+        width: 45%;
+      }
+
+      p {
+        color: $body-font-color;
+      }
+    }
+  }
   article > section {
     padding: 8rem 0;
 
     hr {
       margin: 3rem 0;
     }
+  }
+}
+
+body.vacancy {
+  h1 {
+    margin-top: 2rem;
+    font-size: 4.5rem;
   }
 }
