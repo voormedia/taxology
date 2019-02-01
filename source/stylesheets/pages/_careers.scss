@@ -6,6 +6,8 @@ body.careers {
     justify-content: space-between;
 
     a.job {
+      display: block;
+      margin-bottom: 3rem;
       width: 100%;
       @include desktop {
         width: 45%;
