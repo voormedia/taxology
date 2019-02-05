@@ -1,23 +1,17 @@
 ---
 layout: article
-title: >-
-  ECJ renders decision in Fidelity Funds case (C-480/16): EU free movement of
-  capital entitles non-resident mutual fund to refund of Danish dividend
-  withholding tax, if it meets Danish distribution requirements.
+title: ECJ renders decision in Fidelity Funds case
 date: 2018-06-21T21:20:32.167Z
 featured: /images/insights/grande-salle.jpg
 tags: news
 author: Jeroen van der Wal
 summary: >-
-  Today, the ECJ rendered its decision in the landmark “Fidelity Funds” case.
-  The ECJ rules that the free movement of capital precludes a Member State’s tax
-  regime under which its resident “UCITS” (EU regulated mutual funds) are
-  entitled to exemption from dividend withholding tax on dividends received from
-  resident companies, because they make (or calculate) minimum distributions
-  which are subject to a substitute withholding tax levied by such UCITS from
-  their unitholders, while non-resident UCITS that make (or calculate) and tax
-  such minimum distributions are not entitled to such exemption.
+  ECJ renders decision in Fidelity Funds case (C-480/16): EU free movement of
+  capital entitles non-resident mutual fund to refund of Danish dividend
+  withholding tax, if it meets Danish distribution requirements.
 ---
+Today, the ECJ rendered its decision in the landmark “Fidelity Funds” case. The ECJ rules that the free movement of capital precludes a Member State’s tax regime under which its resident “UCITS” (EU regulated mutual funds) are entitled to exemption from dividend withholding tax on dividends received from resident companies, because they make (or calculate) minimum distributions which are subject to a substitute withholding tax levied by such UCITS from their unitholders, while non-resident UCITS that make (or calculate) and tax such minimum distributions are not entitled to such exemption.
+
 ## _The case facts_
 
 Fidelity Funds (“Fidelity”), a UK based “Undertaking for Collective Investment in Transferable Securities” (“UCITS”, an EU regulated form of a mutual fund), had filed reclaims of Danish withholding tax levied from dividends received by it from Danish companies between 2000 and 2009. In the ensuing legal proceedings the Danish Eastern Regional Court referred the case to the ECJ for a preliminary ruling on questions of EU law.
