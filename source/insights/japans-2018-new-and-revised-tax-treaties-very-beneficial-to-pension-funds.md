@@ -5,7 +5,10 @@ date: 2018-12-01T20:09:54.862Z
 featured: /images/insights/manuel-cosentino-691602-unsplash.jpg
 tags: news
 author: Jeroen van der Wal
-summary: |+
+summary: >-
+  New and revised tax treaties with the a number of European countries entitle
+  Japanese pension funds to a full exemption or refund of the foreign dividend
+  withholding tax paid.
 ---
 In 2018, Japan has concluded many new and revised tax treaties. 
 
