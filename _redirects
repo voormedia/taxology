@@ -1,0 +1,6 @@
+# Redirect domain aliases to primary domain
+https://taxolo.gy/* https://taxology.nl/:splat 301!
+https://www.taxolo.gy/* https://taxology.nl/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+# https://taxology.netlify.com/* https://taxology.nl/:splat 301!
