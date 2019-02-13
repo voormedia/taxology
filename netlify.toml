@@ -1,4 +1,9 @@
 [[redirects]]
+    from = "https://www.taxology.nl/*"
+    to = "https://taxology.nl/:splat"
+    force = true
+
+[[redirects]]
     from = "https://taxolo.gy/*"
     to = "https://taxology.nl/:splat"
     force = true
