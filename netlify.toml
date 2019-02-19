@@ -5,30 +5,25 @@
 
 [[redirects]]
     from = "https://taxolo.gy/*"
-    to = "https://taxology.nl/:splat"
+    to = "https://taxology-global.com/:splat"
     force = true
 
 [[redirects]]
     from = "https://www.taxolo.gy/*"
-    to = "https://taxology.nl/:splat"
-    force = true
-
-[[redirects]]
-    from = "https://taxology-global.com/*"
-    to = "https://taxology.nl/:splat"
+    to = "https://taxology-global.com/:splat"
     force = true
 
 [[redirects]]
     from = "https://taxologyglobal.com/*"
-    to = "https://taxology.nl/:splat"
+    to = "https://taxology-global.com/:splat"
     force = true
 
 [[redirects]]
     from = "https://taxology.global/*"
-    to = "https://taxology.nl/:splat"
+    to = "https://taxology-global.com/:splat"
     force = true
 
 [[redirects]]
     from = "https://taxology.netlify.com/*"
-    to = "https://taxology.nl/:splat"
+    to = "https://taxology-global.com/:splat"
     force = true
