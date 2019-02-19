@@ -1,6 +1,16 @@
 [[redirects]]
+    from = "https://www.taxology-global.com/*"
+    to = "https://taxology-global.com/:splat"
+    force = true
+
+[[redirects]]
+    from = "https://taxology.nl/*"
+    to = "https://taxology-global.com/:splat"
+    force = true
+
+[[redirects]]
     from = "https://www.taxology.nl/*"
-    to = "https://taxology.nl/:splat"
+    to = "https://taxology-global.com/:splat"
     force = true
 
 [[redirects]]
@@ -19,7 +29,17 @@
     force = true
 
 [[redirects]]
+    from = "https://www.taxologyglobal.com/*"
+    to = "https://taxology-global.com/:splat"
+    force = true
+
+[[redirects]]
     from = "https://taxology.global/*"
+    to = "https://taxology-global.com/:splat"
+    force = true
+
+[[redirects]]
+    from = "https://www.taxology.global/*"
     to = "https://taxology-global.com/:splat"
     force = true
 
