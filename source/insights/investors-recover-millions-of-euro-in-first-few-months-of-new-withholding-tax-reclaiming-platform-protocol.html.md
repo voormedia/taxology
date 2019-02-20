@@ -35,7 +35,7 @@ Other features include claim expiration date warnings, data analysis (for claim 
 
 Protocol is currently being rolled out globally after its North American and European launch earlier this year, with the next launch phase slated for Japan.
 For more information on Taxology and Protocol visit
-[taxology.nl](https://taxology.nl)
+[taxology-global.com](https://taxology-global.com)
 
 ### Press release
 

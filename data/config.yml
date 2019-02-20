@@ -1,6 +1,6 @@
 # Site wide settings
 site:
-  root_url: https://taxology.nl
+  root_url: https://taxology-global.com
   title: Taxology - The Future of Tax
   title_separator: " &mdash; "
   meta_description: Protocol standardizes and automates the world wide withholding (WHT) tax recovery process for pension funds
