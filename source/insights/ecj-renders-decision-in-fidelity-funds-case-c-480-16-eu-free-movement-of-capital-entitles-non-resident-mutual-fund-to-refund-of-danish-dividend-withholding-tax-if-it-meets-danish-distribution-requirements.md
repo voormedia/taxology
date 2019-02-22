@@ -2,7 +2,7 @@
 layout: article
 title: ECJ renders decision in Fidelity Funds case
 date: 2018-06-21T21:20:32.167Z
-featured: /images/insights/grande-salle.jpg
+featured: /images/insights/grande-salle-minified.jpg
 tags: news
 author: Jeroen van der Wal
 summary: >-
