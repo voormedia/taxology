@@ -4,10 +4,10 @@ title: >-
   Attorney General renders opinion on relationship between free movement of
   capital and EU state aid rules, in ECJ “A-Fonds” case.
 date: 2018-12-20T10:51:48.394Z
-featured: /images/insights/grande-salle.jpg
+featured: /images/insights/grande-salle-minified.jpg
 tags: blog
 author: Jeroen van der Wal
-summary: >+
+summary: >
   Yesterday, the Attorney General to the European Court of Justice (“ECJ”)
   rendered his Opinion in the pending ECJ “A-Fonds” case (C-598/17). The
   Attorney General is the highest legal advisor to the ECJ and his Opinion is a
