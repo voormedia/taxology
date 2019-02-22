@@ -2,7 +2,7 @@
 layout: article
 title: Japan's 2018 new and revised tax treaties very beneficial to pension funds
 date: 2018-12-01T20:09:54.862Z
-featured: /images/insights/manuel-cosentino-691602-unsplash.jpg
+featured: /images/insights/japan.jpg
 tags: news
 author: Jeroen van der Wal
 summary: >-
