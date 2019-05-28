@@ -5,7 +5,7 @@ title: >-
   Launches In North America
 date: '2018-05-15'
 featured: /images/insights/blog-protocol.jpg
-tags: press release
+tags: press-release
 author: Jeroen van der Wal
 summary: >-
   The software platform, aimed at pension funds, investment managers,

@@ -5,7 +5,7 @@ title: >-
   reclaiming platform, Protocol
 date: 2018-06-20T00:00:00.000Z
 featured: /images/insights/bright-business-chart.jpg
-tags: press release
+tags: press-release
 author: Jeroen van der Wal
 summary: >-
   Pension fund investors have recovered more than EUR three million in the first
