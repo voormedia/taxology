@@ -1,18 +1,19 @@
 ---
 layout: article
-title: 'ECJ: German WHT levied from Canadian pension fund violates the EU treaty'
+title: German WHT levied from Canadian pension fund violates the EU treaty
 date: 2019-11-13T09:24:43.750Z
 featured: /images/insights/cour_dsc_0005.jpg
 tags: news
 author: Jeroen van der Wal
 summary: >-
-  On November 13th, 2019, the European Court of Justice (“ECJ”) published its
-  decision in the “College Pension Plan” case (C-641/17). The ECJ is the highest
-  court of law in the European Union. While the Member State’s court which
-  referred the case to the ECJ renders the final decision, it is bound by the
-  ruling from the ECJ with respect to the questions of EU law.
+  European Court of Justice: German dividend withholding tax levied from
+  Canadian pension fund violates the EU treaty's free movement of capital.
 ---
-In this newsletter we discuss the case facts, legal context, legal questions referred to the ECJ, the Attorney General’s Opinion, and the ECJ’s decision.
+
+On November 13th, 2019, the European Court of Justice (“ECJ”) published its decision in the “College Pension Plan” case (C-641/17). The ECJ is the highest court of law in the European Union. While the Member State’s court which referred the case to the ECJ renders the final decision, it is bound by the ruling from the ECJ with respect to the questions of EU law. 
+
+In this newsletter we discuss the case facts, legal context, legal questions referred to the ECJ, the Attorney General’s Opinion, and the ECJ’s decision. To jump straight to the ECJ’s decision, click here.  
+
 
 ### 1. The case facts 
 
